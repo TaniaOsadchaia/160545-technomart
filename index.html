@@ -5,7 +5,7 @@
 		<title>HTML Academy: Техномарт</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="main-header">
 			<div class="header-top">
 				<div class="container">
 					<div class="logo">
@@ -44,33 +44,35 @@
 			</div>
 			<div class="header-bottom">
 				<div class="container">
-					<ul class="menu">
-						<li>
-							<a href="#">Главная</a>
-						</li>
-						<li>
-							<a href="#">Компания</a>
-						</li>
-						<li>
-							<a href="#">Каталог</a>
-						</li>
-						<li>
-							<a href="#">Новости</a>
-						</li>
-						<li>
-							<a href="#">Спецпредложения</a>
-						</li>
-						<li>
-							<a href="#">Доставка</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
+				  <nav class="main-menu">
+					  <ul>
+  						<li>
+  							<a href="#">Главная</a>
+  						</li>
+  						<li>
+  							<a href="#">Компания</a>
+  						</li>
+  						<li>
+  							<a href="#">Каталог</a>
+  						</li>
+  						<li>
+  							<a href="#">Новости</a>
+  						</li>
+  						<li>
+  							<a href="#">Спецпредложения</a>
+  						</li>
+  						<li>
+  							<a href="#">Доставка</a>
+  						</li>
+  						<li>
+  							<a href="#">Контакты</a>
+  						</li>
+  					</ul>
+					</nav>
 				</div>
 			</div>
 		</header>
-		<main class="content-main">
+		<main class="main-content">
 			<div class="container">
 				<div class="categories">
 					<div class="categories-top">
@@ -97,9 +99,7 @@
 								<div class="slider-prev-btn slider-btn"></div>
 								<div class="slider-next-btn slider-btn"></div>
 							</div>
-							<div class="slider-open-catalog-btn btn">
-								<a href="#">Открыть каталог</a>
-							</div>
+							<a class="slider-open-catalog-btn btn" href="#">Открыть каталог</a>
 						</div>
 						<div class="category">
 							<h3 class="category-title">Скидки 50%</h3>
@@ -259,9 +259,7 @@
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<div class="info-more-btn btn">
-						<a href="#">Подробнее о компании</a>
-					</div>
+					<a class="info-more-btn btn" href="#">Подробнее о компании</a>
 				</div>
 				<div class="info-contacts">
 					<h2 class="info-title">Контакты</h2>
@@ -272,9 +270,7 @@
 					<div class="info-map">
 						<img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19">
 					</div>
-					<div class="info-more-btn btn">
-						<a href="#">Заблудились? Напишите нам!</a>
-					</div>
+					<a class="info-more-btn btn" href="#">Заблудились? Напишите нам!</a>
 				</div>
 			</div>
 		</main>
@@ -328,6 +324,10 @@
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="footer-copyright">
+					  <p>
+					    © 2010–2016 Компания «Техномарт»<br>
+              Все права защищены
+					  </p>
 					</div>
 					<div class="footer-social">
 						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -337,11 +337,11 @@
 					<div class="footer-links">
 						<div class="footer-mail">
 							<p>Обратная связь:</p>
-							<a href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+							<a class="footer-link" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
 						</div>
 						<div class="footer-developer">
 							<p>Разработано:</p>
-							<a href="https://htmlacademy.ru">htmlacademy.ru</a>
+							<a class="footer-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
 						</div>
 					</div>
 				</div>
