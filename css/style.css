@@ -1,0 +1,135 @@
+body
+{
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+	font-style: normal;
+	font-family: "Cuprum", sans-serif;
+}
+
+body a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.main-header
+{
+	background-color: #f1f5f7;
+}
+
+.header-top
+{
+	background-color: #293449;
+}
+
+.main-menu
+{
+	background-color: #32425c;
+}
+
+.logo
+{
+	background-color: #ee3643;
+}
+
+.logo a
+{
+	font-size: 24px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.block-header
+{
+	background-color: #f7f3ec;
+}
+
+.block-header-title
+{
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.block-header-btn
+{
+	background-color: #ee3643;
+}
+
+.product-name
+{
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	font-family: "PT Sans", sans-serif;
+}
+
+.product-price-old
+{
+	font-size: 17px;
+	line-height: 18px;
+	color: #999999;
+	font-weight: bold;
+	text-decoration: line-through;
+	font-family: "PT Sans", sans-serif;
+}
+
+.slider
+{
+	background-image: url(../img/slider/slider-bg-1.jpg);
+	background-repeat: no-repeat;
+}
+
+.services
+{
+	background-color: #f2f6f8;
+}
+
+.main-footer
+{
+	background-color: #32425c;
+	color: #f1f5f7;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-menu a
+{
+	color: #f1f5f7;
+}
+
+.footer-menu-categories a
+{
+	color: #ffd180;
+}
+
+.footer-bottom
+{
+	background-color: #293449;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.fill-blue
+{
+	background-color: #4aafde;
+}
+
+.fill-green
+{
+	background-color: #85d179;
+}
+
+.fill-purple
+{
+	background-color: #cc79d1;
+}
+
+.fill-yellow
+{
+	background-color: #f6b22d;
+}
