@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 		<link rel="stylesheet" type="text/css" href="css/style.css" >
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="header-top">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="logo">
 						<a href="index.html">Техномарт</a>
 					</div>
@@ -38,8 +39,8 @@
 						<div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 					</div>
 					<div class="user-block">
-						<a class="login btn" href="#">Вход</div>
-						<a class="sign-up btn" href="#">Регистрация</div>
+						<a class="login btn" href="#">Вход</a>
+						<a class="sign-up btn" href="#">Регистрация</a>
 					</div>
 				</div>
 			</div>
@@ -75,65 +76,61 @@
 		</header>
 		<main class="main-content">
 			<div class="container">
-				<div class="categories">
-					<div class="categories-top">
-						<div class="category fill-yellow">
-							<h3 class="category-title">Материалы</h3>
-							<a class="category-btn btn" href="#">На любой вкус</a>
-							<div class="category-view">
-								<img src="img/categories/materials.png" width="44" height="65" alt="Материалы">
-							</div>
-						</div>
-						<div class="category fill-blue">
-							<h3 class="category-title">Инструмент</h3>
-							<a class="category-btn btn" href="#">На все случаи</a>
-							<div class="category-view">
-								<img src="img/categories/instrument.png" width="78" height="63" alt="Инструмент">
-							</div>
-						</div>
-						<div class="category fill-purple">
-							<h3 class="category-title">Техника</h3>
-							<a class="category-btn btn" href="#">Для стройки</a>
-							<div class="category-view">
-								<img src="img/categories/equipment.png" width="78" height="62" alt="Техника">
-							</div>
-						</div>
-					</div>
-					<div class="categories-bottom">
-						<div class="slider">
-							<div class="slider-header">
-								<h3 class="slider-title">Перфораторы</h3>
-								<p>Настоящие мужские игрушки</p>
-							</div>
-							<div class="slider-navigation">
-								<div class="slider-prev-btn slider-btn"></div>
-								<div class="slider-next-btn slider-btn"></div>
-							</div>
-							<a class="slider-open-catalog-btn btn" href="#">Открыть каталог</a>
-						</div>
-						<div class="category fill-green">
-							<h3 class="category-title">Скидки 50%</h3>
-							<a class="category-btn btn" href="#">На 350 товаров</a>
-							<div class="category-view">
-								<img src="img/categories/discounts.png" width="59" height="72" alt="Скидки">
-							</div>
-						</div>
-						<div class="category fill-yellow">
-							<h3 class="category-title">Доставка</h3>
-							<a class="category-btn btn" href="#">Бесплатно</a>
-							<div class="category-view">
-								<img src="img/categories/delivery.png" width="78" height="63" alt="Доставка">
-							</div>
-						</div>
-					</div>
+				<div class="categories clearfix">
+                    <div class="category fill-yellow">
+                        <h3 class="category-title">Материалы</h3>
+                        <a class="category-btn btn" href="#">На любой вкус</a>
+                        <div class="category-view">
+                            <img src="img/categories/materials.png" width="44" height="65" alt="Материалы">
+                        </div>
+                    </div>
+                    <div class="category fill-blue">
+                        <h3 class="category-title">Инструмент</h3>
+                        <a class="category-btn btn" href="#">На все случаи</a>
+                        <div class="category-view">
+                            <img src="img/categories/instrument.png" width="78" height="63" alt="Инструмент">
+                        </div>
+                    </div>
+                    <div class="category fill-purple">
+                        <h3 class="category-title">Техника</h3>
+                        <a class="category-btn btn" href="#">Для стройки</a>
+                        <div class="category-view">
+                            <img src="img/categories/equipment.png" width="78" height="62" alt="Техника">
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-header">
+                            <h3 class="slider-title">Перфораторы</h3>
+                            <p>Настоящие мужские игрушки</p>
+                        </div>
+                        <div class="slider-navigation">
+                            <div class="slider-prev-btn slider-btn"></div>
+                            <div class="slider-next-btn slider-btn"></div>
+                        </div>
+                        <a class="slider-open-catalog-btn btn" href="#">Открыть каталог</a>
+                    </div>
+                    <div class="category fill-green">
+                        <h3 class="category-title">Скидки 50%</h3>
+                        <a class="category-btn btn" href="#">На 350 товаров</a>
+                        <div class="category-view">
+                            <img src="img/categories/discounts.png" width="59" height="72" alt="Скидки">
+                        </div>
+                    </div>
+                    <div class="category fill-yellow">
+                        <h3 class="category-title">Доставка</h3>
+                        <a class="category-btn btn" href="#">Бесплатно</a>
+                        <div class="category-view">
+                            <img src="img/categories/delivery.png" width="78" height="63" alt="Доставка">
+                        </div>
+                    </div>
 				</div>
 				<div class="block">
-					<div class="block-header">
+					<div class="block-header clearfix">
 						<h2 class="block-header-title">Популярные товары:</h2>
 						<a class="block-header-btn btn" href="#">Все популярные товары</a>
 					</div>
 					<div class="block-content">
-						<div class="products">
+						<div class="products clearfix">
 							<article class="product">
 								<div class="product-view">
 									<img src="img/products/bfg-9000.jpg" width="184" height="164" alt="BFG 9000">
@@ -181,12 +178,12 @@
 					</div>
 				</div>
 				<div class="block">
-					<div class="block-header">
+					<div class="block-header clearfix">
 						<h2 class="block-header-title">Популярные производители:</h2>
 						<a class="block-header-btn btn" href="#">Все производители</a>
 					</div>
 					<div class="block-content">
-						<div class="brands">
+						<div class="brands clearfix">
 							<article class="brand">
 								<a href="#">
 									<img src="img/brands/bosch.jpg" width="126" height="37" alt="Bosch">
@@ -262,7 +259,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container clearfix">
 				<div class="info-company">
 					<h2 class="info-title">Компания «Техномарт»</h2>
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
@@ -292,7 +289,7 @@
 		</main>
 		<footer class="main-footer">
 			<div class="footer-top">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="footer-logo">
 						<a href="index.html">Техномарт</a>
 					</div>
@@ -316,7 +313,7 @@
 				</div>
 			</div>
 			<div class="footer-middle">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="footer-contacts">
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 						+7 (812) 555-05-55

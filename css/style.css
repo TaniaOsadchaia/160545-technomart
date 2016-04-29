@@ -1,10 +1,14 @@
 body
 {
+    padding: 0px;
+    
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
 	font-style: normal;
 	font-family: "Cuprum", sans-serif;
+    
+    background-color: #ffffff;
 }
 
 body a
@@ -13,23 +17,50 @@ body a
 	color: #ffffff;
 }
 
+.container
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: : 0 10px;
+}
+
+.clearfix::after
+{
+    content: "";
+    
+    display: table;
+    clear: both;
+}
+
 .main-header
 {
+    margin-bottom: 60px;
+    
 	background-color: #f1f5f7;
 }
 
 .header-top
 {
+    margin-bottom: 46px;
+    
 	background-color: #293449;
 }
 
-.main-menu
+.header-middle
 {
-	background-color: #32425c;
+    margin-bottom: 42px;
+}
+
+.header-bottom
+{
+    padding-bottom: 65px;
 }
 
 .logo
 {
+    float: left;
+    width: 220px;
+    
 	background-color: #ee3643;
 }
 
@@ -41,13 +72,70 @@ body a
 	color: #ffffff;
 }
 
+.search
+{
+    float: left;
+}
+
+.shop-links
+{
+    float: right;
+}
+
+.main-menu
+{
+	background-color: #32425c;
+}
+
+.main-menu li
+{
+    display: inline-block;
+}
+
+.category
+{
+    float: left;
+    width: 300px;
+    height: 123px;
+    margin-bottom: 20px;
+}
+
+.category:nth-child(-n+2)
+{
+    margin-right: 20px;
+}
+
+.category-view
+{
+    float: right;
+}
+
+.slider
+{
+    float: left;
+    width: 620px;
+    height: 266px;
+    margin-right: 20px;
+    
+    background-image: url(../img/slider/slider-bg-1.jpg);
+	background-repeat: no-repeat;
+}
+
+
+
 .block-header
 {
+    margin-bottom: 20px;
+    
 	background-color: #f7f3ec;
 }
 
 .block-header-title
 {
+    float:left;
+    margin: 0;
+    padding: 30px;
+    
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
@@ -56,7 +144,28 @@ body a
 
 .block-header-btn
 {
+    float: right;
+    
 	background-color: #ee3643;
+}
+
+
+
+.product
+{
+    float: left;
+    width: 218px;
+    height: 316px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    margin-right: 20px;    
+    
+    text-align: center;
+}
+
+.product:last-child
+{
+    margin-right: 0px;
 }
 
 .product-name
@@ -77,16 +186,47 @@ body a
 	font-family: "PT Sans", sans-serif;
 }
 
-.slider
+
+
+.brand
 {
-	background-image: url(../img/slider/slider-bg-1.jpg);
-	background-repeat: no-repeat;
+    float: left;
+    width: 218px;
+    height: 143px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+    text-align: center;
 }
+
+.brand:nth-child(4n)
+{
+     margin-right: 0px;
+}
+
+
 
 .services
 {
 	background-color: #f2f6f8;
 }
+
+
+
+.info-company
+{
+    float: left;
+    width: 620px;
+}
+
+.info-contacts
+{
+    float: right;
+    width: 300px;
+}
+
+
 
 .main-footer
 {
@@ -96,9 +236,78 @@ body a
 	line-height: 24px;
 }
 
+.footer-top
+{
+    margin-bottom: 35px;
+}
+
+.footer-logo
+{
+    float: left;
+    width: 220px;
+    height: 63px;
+    
+    text-align: center;
+    color: #ffffff;
+    
+    background-color: #ee3643;
+}
+
+.footer-menu
+{
+    float: right;
+}
+
+.footer-menu li
+{
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0;
+}
+
+.footer-menu li:last-child
+{
+    padding: 0;
+}
+
 .footer-menu a
 {
 	color: #f1f5f7;
+}
+
+
+
+.footer-middle
+{
+    
+}
+
+.footer-contacts
+{
+    float: left;
+    width: 380px;
+}
+
+.footer-menu-categories
+{
+    float: right;
+    width: 560px;
+}
+
+.footer-menu-categories li
+{
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0;
+}
+
+.footer-menu-categories li:last-child
+{
+    padding: 0;
 }
 
 .footer-menu-categories a
@@ -108,11 +317,14 @@ body a
 
 .footer-bottom
 {
-	background-color: #293449;
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
+    
+    background-color: #293449;
 }
+
+
 
 .fill-blue
 {
