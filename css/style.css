@@ -7,6 +7,9 @@
 
 body
 {
+	margin: 0;
+	padding: 0;
+	
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -26,7 +29,7 @@ body a
 {
     width: 960px;
     margin: 0 auto;
-    padding: : 0 10px;
+    padding: 0 10px;
 }
 
 .clearfix::after
@@ -317,8 +320,8 @@ body a
 .product
 {
     float: left;
-    width: 218px;
-    height: 316px;
+    width: 220px;
+    height: 318px;
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;    
@@ -354,8 +357,8 @@ body a
 .brand
 {
     float: left;
-    width: 218px;
-    height: 143px;
+    width: 220px;
+    height: 145px;
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -391,6 +394,7 @@ body a
 
 
 
+
 .main-footer
 {
 	background-color: #32425c;
@@ -404,49 +408,96 @@ body a
     margin-bottom: 35px;
 }
 
+
+
 .footer-logo
 {
     float: left;
-    width: 220px;
-    height: 63px;
-    
+	
     text-align: center;
-    color: #ffffff;
     
     background-color: #ee3643;
+	box-shadow: 0 5px 0 #b52933;
 }
+
+.footer-logo:hover
+{
+	background-color: #ca2c37;
+	box-shadow: 0 5px 0 #9a212a;
+}
+
+.footer-logo:active
+{
+	background-color: #ba2732;
+	box-shadow: 0 5px 0 #8e1e26;
+}
+
+.footer-logo a
+{
+	display: block;
+	width: 220px;
+	padding: 15px 0;
+	
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #ffffff;
+	vertical-align: top;
+}
+
+
 
 .footer-menu
 {
     float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu ul 
+{
+	list-style: none;
+	font-size: 0;
+	text-align: center;
 }
 
 .footer-menu li
 {
     display: inline-block;
-    padding-top: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 0;
+	padding: 42px 30px 0;
+	
+	font-size: 18px;
+	line-height: 18px;
+	vertical-align: bottom;
 }
 
 .footer-menu li:last-child
 {
-    padding: 0;
+	padding-right: 0;
 }
 
 .footer-menu a
 {
-	margin: 0;
-	padding: 0;
 	color: #f1f5f7;
+	text-decoration: none;
+}
+
+.footer-menu a:hover
+{
+	text-decoration: underline;
+}
+
+.footer-menu a:active 
+{
+	color: #77808f;
+	text-decoration: none;
 }
 
 
 
 .footer-middle
 {
-    
+    margin-bottom: 56px;
 }
 
 .footer-contacts
@@ -483,8 +534,13 @@ body a
 	color: #ffd180;
 }
 
+
+
 .footer-bottom
 {
+	padding-top: 36px;
+	padding-bottom: 30px;
+	
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
@@ -492,6 +548,43 @@ body a
     background-color: #293449;
 }
 
+.footer-copyright
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-social
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-links
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-link
+{
+	display: inline-block;
+}
+
+.footer-link p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.footer-link a
+{
+	color: #ffd180;
+}
+	
 
 
 .fill-blue
