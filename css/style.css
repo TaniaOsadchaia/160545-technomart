@@ -180,7 +180,7 @@ body a
 	float: right;
 }
 
-.user-block a
+.user-block .btn
 {
 	display: inline-block;
 	padding: 12px 25px;
@@ -193,16 +193,45 @@ body a
 	background-color: #ffffff;
 }
 
-.user-block a:hover
+.user-block .btn:hover
 {
 	color: #ee3643;
 }
 
-.user-block a:active
+.user-block .btn:active
 {
 	color: #cacaca;
 }
 
+.sign-out .btn
+{
+	padding-right: 70px;
+}
+
+.user-links
+{
+	margin-left: 10px;
+}
+
+.user-link
+{
+	padding: 0 16px;
+	
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
+}
+
+.user-link:hover
+{
+	color: #ee3643;
+}
+
+.user-link:active
+{
+	color: #cacfd5;
+}
 
 
 .header-bottom
