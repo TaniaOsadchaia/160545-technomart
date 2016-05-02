@@ -61,6 +61,16 @@ body a
 	border-radius: 2px;
 }
 
+.btn:hover
+{
+	background-color: #ca2c37;
+}
+
+.btn:active
+{
+	background-color: #ba2732;
+}
+
 /* ------------------------------------------  header */
 
 .main-header
@@ -372,6 +382,16 @@ body a
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
+.category-btn:hover
+{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.category-btn:active
+{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
 .fill-blue
 {
 	background-color: #4aafde;
@@ -443,10 +463,13 @@ body a
 {
     float: left;
     width: 220px;
-    height: 318px;
+    min-height: 318px;
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
+	position: relative;
+	
+	text-align: center;
 }
 
 .index-products .product:nth-child(4n)
@@ -462,7 +485,7 @@ body a
 .product-view
 {
 	position: relative;
-	height: 182px;
+	height: 178px;
 }
 
 .product-view img
@@ -477,24 +500,38 @@ body a
 
 .product-name
 {
-	margin-bottom: 16px;
+	margin-bottom: 11px;
 	
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
-	font-family: "PT Sans", sans-serif;
-	text-align: center;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .product-price-old
 {
+	margin-bottom: 10px;
+	
 	font-size: 17px;
 	line-height: 18px;
 	color: #999999;
 	font-weight: bold;
 	text-decoration: line-through;
-	font-family: "PT Sans", sans-serif;
-	text-align: center;
+	text-transform: uppercase;
+	font-family: "PT Sans", "Arial", sans-serif;
+	
+}
+
+.product-price
+{
+	display: inline-block;
+	min-width: 140px;
+	margin-bottom: 19px;
+	
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 /* ------------------------------------------  brands */
@@ -779,6 +816,57 @@ body a
 	text-transform: uppercase;
 	
 	background-color: #f7f3ec;
+}
+
+/* ------------------------------------------  pagination */
+
+.pagination
+{
+	margin-top: 32px;
+	margin-bottom: 60px;
+}
+
+.pagination a, 
+.pagination span
+{
+	display: inline-block;
+	min-width: 38px;
+	margin: 0;
+	margin-right: 10px;
+	padding: 12px;
+	
+	font-size: 13px;
+	line-height: 14px;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	
+	background-color: #ffffff;
+	border-radius: 2px;
+	border: 1px solid #e5e5e5; 
+}
+
+.pagination span
+{
+	color: #ffffff;
+	background-color: #ee3643;
+	border: 1px solid #ee3643; 
+}
+
+.pagination a:hover
+{
+	border: 1px solid #bdc6ca; 
+}
+
+.pagination a:active
+{
+	border: 1px solid #ee3643; 
+}
+
+.pagination a:last-child
+{
+	padding-left: 31px;
+	padding-right: 31px;
 }
 
 /* ------------------------------------------  text-content */
