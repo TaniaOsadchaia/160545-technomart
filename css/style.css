@@ -451,6 +451,7 @@ body a
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
+	font-weight: normal;
 	text-transform: uppercase;
 }
 
@@ -812,6 +813,7 @@ body a
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
+	font-weight: normal;
 	text-transform: uppercase;
 	
 	background-color: #f2f6f8;
@@ -965,6 +967,7 @@ body a
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
+	font-weight: normal;
 	text-transform: uppercase;
 }
 
