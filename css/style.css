@@ -384,9 +384,23 @@ body a
     height: 318px;
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
-    margin-right: 20px;    
-    
-    text-align: center;
+    margin-right: 20px;
+}
+
+.product-view
+{
+	position: relative;
+	height: 182px;
+}
+
+.product-view img
+{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
 }
 
 .product-name
@@ -395,6 +409,7 @@ body a
 	line-height: 20px;
 	font-weight: bold;
 	font-family: "PT Sans", sans-serif;
+	text-align: center;
 }
 
 .product-price-old
@@ -405,6 +420,7 @@ body a
 	font-weight: bold;
 	text-decoration: line-through;
 	font-family: "PT Sans", sans-serif;
+	text-align: center;
 }
 
 .index-products .product:nth-child(4n)
@@ -427,7 +443,6 @@ body a
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
-	
 	position: relative;
 }
 
