@@ -80,6 +80,11 @@ body a
 	background-color: #f1f5f7;
 }
 
+.main-header-catalog
+{
+	margin-bottom: 24px;
+}
+
 .header-top
 {
     margin-bottom: 46px;
@@ -92,6 +97,8 @@ body a
 .logo
 {
     float: left;
+	width: 220px;
+	height: 41px;
     
 	text-align: center;
 	
@@ -541,7 +548,6 @@ body a
     float: left;
     width: 220px;
     height: 145px;
-    border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
 	position: relative;
@@ -560,6 +566,25 @@ body a
 .index-brands .brand:nth-child(4n)
 {
      margin-right: 0px;
+}
+
+.brand a
+{
+	display: block;
+	height: 100%;
+	
+	border: 1px solid #e5e5e5;
+}
+
+.brand a:hover
+{
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.brand a:active
+{
+	opacity: 0.5;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 /* ------------------------------------------  services */
@@ -792,6 +817,35 @@ body a
 	background-color: #f2f6f8;
 }
 
+/* ------------------------------------------  breadcrumbs */
+
+.breadcrumbs 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadcrumbs li
+{
+	float: left;
+}
+
+.breadcrumbs li a 
+{
+	display: block;
+	float: left;
+	margin-right: 42px;
+	margin-bottom: 17px;
+	padding: 0;
+	
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none; 
+	text-transform: uppercase;
+}
+
 /* ------------------------------------------  filters + catalog */
 
 .filters
@@ -816,6 +870,7 @@ body a
 	text-transform: uppercase;
 	
 	background-color: #f7f3ec;
+	border-radius: 3px;
 }
 
 /* ------------------------------------------  pagination */
@@ -823,7 +878,7 @@ body a
 .pagination
 {
 	margin-top: 32px;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 .pagination a, 
@@ -833,6 +888,7 @@ body a
 	min-width: 38px;
 	margin: 0;
 	margin-right: 10px;
+	margin-bottom: 10px;
 	padding: 12px;
 	
 	font-size: 13px;
