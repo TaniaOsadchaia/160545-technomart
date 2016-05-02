@@ -46,6 +46,21 @@ body a
     clear: both;
 }
 
+.btn
+{
+	margin: 0;
+	padding: 10px;
+	
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	
+	background-color: #ee3643;
+	border-radius: 2px;
+}
+
 /* ------------------------------------------  header */
 
 .main-header
@@ -112,11 +127,11 @@ body a
 .shop-links a
 {
 	display: inline-block;
+	vertical-align: top;
 	padding: 12px 22px;
 	
 	font-size: 17px;
 	line-height: 18px;
-	vertical-align: top;
 }
 
 .btn-order
@@ -302,7 +317,7 @@ body a
 {
     float: left;
     width: 300px;
-    height: 123px;
+    min-height: 123px;
     margin-bottom: 20px;
 }
 
@@ -313,18 +328,48 @@ body a
 
 .category-view
 {
-    float: right;
+	position: relative;
+	float: right;
+	width: 140px;
+	height: 123px;
 }
 
-.slider
+.category-view img
 {
-    float: left;
-    width: 620px;
-    height: 266px;
-    margin-right: 20px;
-    
-    background-image: url(../img/slider/slider-bg-1.jpg);
-	background-repeat: no-repeat;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.category-info
+{
+	float: left;
+	width: 160px;
+	padding-left: 24px;
+	padding-top: 23px;
+	padding-bottom: 22px;
+}
+
+.category-title
+{
+	margin: 0;
+	margin-bottom: 17px;
+	padding: 0;
+	
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.category-btn
+{
+	display: block;
+	min-width: 135px;
+	
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .fill-blue
@@ -345,6 +390,20 @@ body a
 .fill-yellow
 {
 	background-color: #f6b22d;
+}
+
+
+/* ------------------------------------------  slider */
+
+.slider
+{
+    float: left;
+    width: 620px;
+    height: 266px;
+    margin-right: 20px;
+    
+    background-image: url(../img/slider/slider-bg-1.jpg);
+	background-repeat: no-repeat;
 }
 
 /* ------------------------------------------  block */
@@ -371,7 +430,10 @@ body a
 .block-header-btn
 {
     float: right;
-    
+	min-width: 253px;
+	margin-right: 24px;
+	margin-top: 25px;
+	
 	background-color: #ee3643;
 }
 
@@ -385,6 +447,16 @@ body a
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
+}
+
+.index-products .product:nth-child(4n)
+{
+    margin-right: 0px;
+}
+
+.catalog-products .product:nth-child(3n)
+{
+	 margin-right: 0px;
 }
 
 .product-view
@@ -405,6 +477,8 @@ body a
 
 .product-name
 {
+	margin-bottom: 16px;
+	
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -421,16 +495,6 @@ body a
 	text-decoration: line-through;
 	font-family: "PT Sans", sans-serif;
 	text-align: center;
-}
-
-.index-products .product:nth-child(4n)
-{
-    margin-right: 0px;
-}
-
-.catalog-products .product:nth-child(3n)
-{
-	 margin-right: 0px;
 }
 
 /* ------------------------------------------  brands */
