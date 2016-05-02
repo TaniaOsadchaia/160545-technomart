@@ -19,6 +19,12 @@ body
     background-color: #ffffff;
 }
 
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
 body a
 {
 	text-decoration: none;
@@ -40,6 +46,8 @@ body a
     clear: both;
 }
 
+/* ------------------------------------------  header */
+
 .main-header
 {
     margin-bottom: 60px;
@@ -53,6 +61,8 @@ body a
     
 	background-color: #293449;
 }
+
+/* ------------------------------------------  header logo */
 
 .logo
 {
@@ -125,7 +135,7 @@ body a
 	background-color: #518534;
 }
 
-
+/* ------------------------------------------  header middle */
 
 .header-middle
 {
@@ -233,6 +243,7 @@ body a
 	color: #cacfd5;
 }
 
+/* ------------------------------------------  header bottom */
 
 .header-bottom
 {
@@ -285,7 +296,7 @@ body a
 	box-shadow: 0 5px 0px #1d2739;
 }
 
-
+/* ------------------------------------------  categories */
 
 .category
 {
@@ -316,7 +327,27 @@ body a
 	background-repeat: no-repeat;
 }
 
+.fill-blue
+{
+	background-color: #4aafde;
+}
 
+.fill-green
+{
+	background-color: #85d179;
+}
+
+.fill-purple
+{
+	background-color: #cc79d1;
+}
+
+.fill-yellow
+{
+	background-color: #f6b22d;
+}
+
+/* ------------------------------------------  block */
 
 .block-header
 {
@@ -344,7 +375,7 @@ body a
 	background-color: #ee3643;
 }
 
-
+/* ------------------------------------------  products */
 
 .product
 {
@@ -356,11 +387,6 @@ body a
     margin-right: 20px;    
     
     text-align: center;
-}
-
-.product:last-child
-{
-    margin-right: 0px;
 }
 
 .product-name
@@ -381,7 +407,17 @@ body a
 	font-family: "PT Sans", sans-serif;
 }
 
+.index-products .product:nth-child(4n)
+{
+    margin-right: 0px;
+}
 
+.catalog-products .product:nth-child(3n)
+{
+	 margin-right: 0px;
+}
+
+/* ------------------------------------------  brands */
 
 .brand
 {
@@ -391,23 +427,33 @@ body a
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
-    
-    text-align: center;
+	
+	position: relative;
 }
 
-.brand:nth-child(4n)
+.brand img
+{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.index-brands .brand:nth-child(4n)
 {
      margin-right: 0px;
 }
 
-
+/* ------------------------------------------  services */
 
 .services
 {
 	background-color: #f2f6f8;
 }
 
-
+/* ------------------------------------------  infos */
 
 .info-company
 {
@@ -422,7 +468,7 @@ body a
 }
 
 
-
+/* ------------------------------------------  footer */
 
 .main-footer
 {
@@ -437,7 +483,7 @@ body a
     margin-bottom: 35px;
 }
 
-
+/* ------------------------------------------  footer logo */
 
 .footer-logo
 {
@@ -474,7 +520,7 @@ body a
 	vertical-align: top;
 }
 
-
+/* ------------------------------------------  footer menu */
 
 .footer-menu
 {
@@ -522,7 +568,7 @@ body a
 	text-decoration: none;
 }
 
-
+/* ------------------------------------------  footer middle */
 
 .footer-middle
 {
@@ -563,7 +609,7 @@ body a
 	color: #ffd180;
 }
 
-
+/* ------------------------------------------  footer bottom */
 
 .footer-bottom
 {
@@ -613,25 +659,78 @@ body a
 {
 	color: #ffd180;
 }
+
+/* ------------------------------------------  catalog */
+
+.page-title
+{
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 30px;
 	
-
-
-.fill-blue
-{
-	background-color: #4aafde;
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+	
+	background-color: #f2f6f8;
 }
 
-.fill-green
+/* ------------------------------------------  filters + catalog */
+
+.filters
 {
-	background-color: #85d179;
+	float: left;
+	width: 220px;
 }
 
-.fill-purple
+.catalog
 {
-	background-color: #cc79d1;
+	float: right;
+	width: 700px;
 }
 
-.fill-yellow
+.control-header
 {
-	background-color: #f6b22d;
+	padding: 19px 15px;
+	
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+	
+	background-color: #f7f3ec;
+}
+
+/* ------------------------------------------  text-content */
+
+.text-content-block
+{
+	padding-top: 20px;
+	padding-bottom: 68px;
+	
+	background-color: #f2f6f8;
+}
+
+.text-content-block h2
+{
+	margin: 0;
+	padding: 0;
+	padding-top: 48px;
+	
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.text-content-block p
+{
+	margin: 0;
+	padding: 0;
+	padding-top: 24px;
+	
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
 }
