@@ -862,6 +862,7 @@ body a
 
 .control-header
 {
+	margin-bottom: 20px;
 	padding: 19px 15px;
 	
 	font-size: 13px;
@@ -871,6 +872,26 @@ body a
 	
 	background-color: #f7f3ec;
 	border-radius: 3px;
+}
+
+/* ------------------------------------------  sort */
+
+.sort-title
+{
+	float: left;
+	width: 160px;
+}
+
+.sort-types
+{
+	float: right;
+	width: 460px;
+}
+
+.sort-directions
+{
+	float: right;
+	width: 80px;
 }
 
 /* ------------------------------------------  pagination */
