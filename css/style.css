@@ -491,13 +491,107 @@ body a
 
 .slider
 {
+	position: relative;
     float: left;
     width: 620px;
     height: 266px;
     margin-right: 20px;
+	padding: 25px 22px;
     
-    background-image: url(../img/slider/slider-bg-1.jpg);
-	background-repeat: no-repeat;
+    background: #aca093 url(../img/slider/slider-bg-1.jpg) no-repeat 0 0;
+}
+
+.slider-header h3
+{
+	margin: 0;
+	padding: 0;
+	
+	font-size: 36px;
+	line-height: 36px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.slider-header p
+{
+	margin: 0;
+	padding: 0;
+	
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.slider-btn
+{
+	display: block;
+	position: absolute;
+	bottom: 22px;
+	min-width: 195px;
+}
+
+.slider-prev,
+.slider-next
+{
+	display: block;
+	position: absolute;
+	top: 112px;
+	
+	font-size: 45px;
+}
+
+.slider-prev
+{
+	left: 0;
+}
+
+.slider-next
+{
+	right: 0;
+}
+
+.slider-pagination
+{
+	position: absolute;
+	width: 100%;
+	bottom: 25px;
+	left: 0;
+	
+	text-align: center;
+}
+
+.slider-pagination a,
+.slider-pagination span
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 10px;
+	height: 10px;
+	margin: 5px;
+	
+	background: #ffffff;
+	border-radius: 5px;
+}
+
+.slider-pagination span
+{
+	position: relative;
+}
+
+.slider-pagination-current
+{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	
+	width: 6px;
+	height: 6px;
+	
+	background: #ef404c;
+	border-radius: 3px;
 }
 
 /* ------------------------------------------  block */
