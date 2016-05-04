@@ -835,7 +835,7 @@ body a
 
 .footer-menu a:active 
 {
-	color: #77808f;
+	opacity: 0.5;
 	text-decoration: none;
 }
 
@@ -880,6 +880,17 @@ body a
 	color: #ffd180;
 }
 
+.footer-menu-categories a:hover
+{
+	text-decoration: underline;
+}
+
+.footer-menu-categories a:active 
+{
+	opacity: 0.5;
+	text-decoration: none;
+}
+
 /* ------------------------------------------  footer bottom */
 
 .footer-bottom
@@ -903,6 +914,8 @@ body a
 	padding: 0;
 }
 
+/* ------------------------------------------  footer social */
+
 .footer-social
 {
 	float: left;
@@ -912,6 +925,29 @@ body a
 	
 	text-align: center;
 }
+
+.social
+{
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	width: 40px;
+	
+	font-size: 17px;
+	line-height: 40px;
+	text-align: center;
+	
+	background-color: #212a3a;
+	border-radius: 20px;
+}
+
+.social:hover,
+.social:active
+{
+	background-color: #ee3643;
+}
+
+/* ------------------------------------------  footer links */
 
 .footer-links
 {
@@ -943,21 +979,15 @@ body a
 	color: #ffd180;
 }
 
-/* ------------------------------------------  footer social */
-
-.social
+.footer-link a:hover
 {
-	display: inline-block;
-	vertical-align: middle;
-	height: 40px;
-	width: 40px;
-	
-	font-size: 17px;
-	line-height: 40px;
-	text-align: center;
-	
-	background-color: #212a3a;
-	border-radius: 20px;
+	text-decoration: underline;
+}
+
+.footer-link a:active 
+{
+	color: #ee3643;
+	text-decoration: none;
 }
 
 /* ------------------------------------------  catalog */
