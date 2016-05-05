@@ -315,7 +315,7 @@ body a
 	width: 270px;
 	border: 3px solid #ffffff;
 	padding: 10px;
-	padding-left: 28px;
+	padding-left: 32px;
 	
 	font-size: 21px;
 	line-height: 21px;
@@ -323,20 +323,20 @@ body a
 	text-align: center;
 }
 
-.icon-phone
+.phone::before
 {
-	display: block;
+	content: "\1f4de";
 	position: absolute;
-	left: 8px;
+	left: 15px;
 	
 	color: #b7bfc8;
+	font-family: "symbols-technomart";
 }
 
 .address
 {
 	text-align: center;
 }
-
 
 /* ------------------------------------------  user login */
 
