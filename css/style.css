@@ -1315,6 +1315,11 @@ input[type="radio"]:hover + label::before
 	color: red;
 }
 
+.filter + .filter
+{
+	border-top: 1px solid #e5e5e5;
+}
+
 /* ------------------------------------------  sort */
 
 .sort-title
