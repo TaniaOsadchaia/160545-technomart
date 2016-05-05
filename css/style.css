@@ -566,14 +566,14 @@ body a
 	float: left;
 	width: 160px;
 	padding-left: 24px;
-	padding-top: 23px;
+	padding-top: 21px;
 	padding-bottom: 22px;
 }
 
 .category-title
 {
 	margin: 0;
-	margin-bottom: 17px;
+	margin-bottom: 12px;
 	padding: 0;
 	
 	font-size: 24px;
@@ -769,7 +769,6 @@ body a
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
-	position: relative;
 	
 	text-align: center;
 }
@@ -821,9 +820,9 @@ body a
 	text-decoration: line-through;
 	text-transform: uppercase;
 	font-family: "PT Sans", "Arial", sans-serif;
-	
 }
 
+/* ??? а как прижать ее к нижнему краю? */
 .product-price
 {
 	display: inline-block;
@@ -1249,24 +1248,19 @@ body a
 
 /* ------------------------------------------  breadcrumbs */
 
+/* ??? тут, кажется, должно быть что-то проще */
 .breadcrumbs 
 {
 	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.breadcrumbs li
-{
-	float: left;
-}
-
-.breadcrumbs li a 
-{
-	display: block;
-	float: left;
-	margin-right: 42px;
 	margin-bottom: 17px;
+	margin-left: 18px;
+	padding: 0;
+}
+
+.breadcrumb
+{
+	position: relative;
+	margin-right: 42px;
 	padding: 0;
 	
 	font-size: 13px;
@@ -1274,6 +1268,24 @@ body a
 	color: #000000;
 	text-decoration: none; 
 	text-transform: uppercase;
+}
+
+.breadcrumb::before
+{
+	content: "\3e";
+	position: absolute;
+	left: -25px;
+	
+	font-size: 16px;
+	line-height: 20px;
+	color: #b7bfc8;
+	font-family: "symbols-technomart";
+}
+
+.breadcrumb:first-child::before
+{
+	content: "\1f3e0";
+	left: -18px;
 }
 
 /* ------------------------------------------  filters + catalog */
