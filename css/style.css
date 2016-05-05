@@ -1250,6 +1250,71 @@ body a
 	border-radius: 3px;
 }
 
+input[type="checkbox"],
+input[type="radio"]
+{
+	display: none;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label
+{
+	position: relative;
+	display: block;
+	margin: 20px 0;
+	padding-left: 35px;
+	
+	font-size: 15px;
+	line-height: 20px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
+	
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 28px;
+	height: 28px;
+	
+	color: #c1c1c1;
+	font-size: 28px;
+	font-family: "symbols-technomart";
+}
+
+input[type="checkbox"] + label::before
+{
+	content: "\2610";
+}
+
+input[type="checkbox"]:checked + label::before
+{
+	content: "\2611";
+}
+
+input[type="radio"] + label::before
+{
+	content: "\25cb";
+}
+
+input[type="radio"]:checked + label::before
+{
+	content: "\25cf";
+}
+
+/* ??? а в Opera и Chrome это не работает =( */
+input[type="checkbox"]:hover + label::before,
+input[type="radio"]:hover + label::before
+{
+	/*color: #b5b5b5;*/
+	color: red;
+}
+
 /* ------------------------------------------  sort */
 
 .sort-title
