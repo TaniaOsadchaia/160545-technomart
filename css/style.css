@@ -154,6 +154,7 @@ body a
 .header-top
 {
     margin-bottom: 46px;
+	min-height: 42px;
     
 	background-color: #293449;
 }
@@ -164,7 +165,7 @@ body a
 {
     float: left;
 	width: 220px;
-	height: 41px;
+	height: 100%;
     
 	text-align: center;
 	
@@ -187,38 +188,79 @@ body a
 .logo a
 {
 	display: block;
-	width: 220px;
 	padding: 10px 0 8px;
 	
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #ffffff;
-	vertical-align: top;
 }
 
 .search
 {
     float: left;
+	width: 160px;
 }
 
 .shop-links
 {
     float: right;
+	width: 460px;
+	
+	text-align: right;
 }
 
-.shop-links a
+.shop-link
 {
 	display: inline-block;
-	vertical-align: top;
-	padding: 12px 22px;
+	vertical-align: middle;
+	padding: 12px;
+	padding-right: 26px;
+	height: 100%;
 	
 	font-size: 17px;
 	line-height: 18px;
 }
 
+.shop-link:hover
+{
+	background: #212a3a;
+}
+
+.shop-link:hover::before
+{
+	opacity: 1.0;
+}
+
+.shop-link:active
+{
+	background: #161d29;
+	opacity: 0.6;
+}
+
+.btn-basket::before,
+.btn-bookmarks::before
+{
+	content: "";
+	margin-right: 19px;
+	font-family: "symbols-technomart";
+	opacity: 0.3;
+}
+
+.btn-basket::before
+{
+	content: "\62";
+}
+
+.btn-bookmarks::before
+{
+	content: "\1f516";
+}
+
 .btn-order
 {
+	padding-left: 20px;
+	padding-right: 22px;
 	background-color: #63a63e;
 }
 
