@@ -382,15 +382,17 @@ body a
 	padding-left: 48px;
 }
 
-.icon-login
+.login::before
 {
+	content: "\2386";
 	position: absolute;
 	left: 10px;
 	
 	color: #c5c5c5;
+	font-family: "symbols-technomart";
 }
 
-.login:hover .icon-login
+.login:hover::before
 {
 	color: #32425c;
 }
@@ -405,32 +407,42 @@ body a
 	position: relative;
 	padding-left: 48px;
 	padding-right: 70px;
+	
+	text-transform: none;
 }
 
-.icon-user
+.sign-out::before,
+.sign-out::after
 {
+	content: "";
 	position: absolute;
-	left: 10px;
 	
 	color: #c5c5c5;
+	font-family: "symbols-technomart";
 }
 
-.icon-logout
+.sign-out::before
 {
-	position: absolute;
-	right: 5px;
-	
-	color: #c5c5c5;
+	content: "\1f468";
+	left: 6px;
+	font-size: 18px;
 }
 
-.sign-out:hover .icon-user,
-.sign-out:hover .icon-logout
+.sign-out::after
+{
+	content: "\241b";
+	right: 10px;
+	font-size: 22px;
+}
+
+.sign-out:hover::before,
+.sign-out:hover::after
 {
 	color: #32425c;
 }
 
-.sign-out:active .icon-user,
-.sign-out:active .icon-logout
+.sign-out:active::before,
+.sign-out:active::after
 {
 	color: #c5c5c5;
 }
