@@ -900,6 +900,7 @@ body a
 	background: #f2f6f8 url(../img/services/delivery.jpg) no-repeat 100% 100%;
 }
 
+/* ??? как сделать такую тень у списка сервисов? */
 .services-menu
 {
 	float: left;
@@ -1502,6 +1503,7 @@ input[type="radio"]:hover + label::before
 	list-style: none;
 }
 
+/* ??? как пунктам списка добавить красную линию слева? */
 .content li
 {
 	margin: 0;
