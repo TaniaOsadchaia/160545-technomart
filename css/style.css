@@ -1,21 +1,21 @@
 /* ------------------------------------------  symbols */
 
-@font-face {
+@font-face 
+{
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-technomart";
   src: url("../fonts/symbols-technomart.woff") format("woff"),
        url("../fonts/symbols-technomart.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
-[class*=" icon-"]::before {
+[class*=" icon-"]::before 
+{
   display: inline-block;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
@@ -24,7 +24,6 @@
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 
@@ -57,57 +56,49 @@
 
 /* ------------------------------------------  common */
 
-*
+* 
 {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
 
-body
+body 
 {
 	margin: 0;
 	padding: 0;
-	
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
 	font-style: normal;
 	font-family: "Cuprum", "Arial", sans-serif;
-    
-    background-color: #ffffff;
+    background: #ffffff;
 }
 
-img
+img 
 {
 	max-width: 100%;
 	height: auto;
 }
 
-body a
+body a 
 {
 	text-decoration: none;
 	color: #ffffff;
 }
 
-.container
+.container 
 {
     width: 960px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-.clearfix::after
+.clearfix::after 
 {
     content: "";
-    
     display: table;
     clear: both;
-}
-
-.main-content
-{
-	background-color: #ffffff;
 }
 
 /* ------------------------------------------  btn */
@@ -116,13 +107,11 @@ body a
 {
 	margin: 0;
 	padding: 10px;
-	
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	
 	background-color: #ee3643;
 	border-radius: 2px;
 }
@@ -141,8 +130,7 @@ body a
 
 .main-header
 {
-    margin-bottom: 60px;
-    
+	margin-bottom: 60px;
 	background-color: #f1f5f7;
 }
 
@@ -155,7 +143,6 @@ body a
 {
     margin-bottom: 46px;
 	min-height: 42px;
-    
 	background-color: #293449;
 }
 
@@ -166,9 +153,7 @@ body a
     float: left;
 	width: 220px;
 	height: 100%;
-    
 	text-align: center;
-	
 	background-color: #ee3643;
 	box-shadow: 0 5px 0 #b52933;
 }
@@ -189,24 +174,78 @@ body a
 {
 	display: block;
 	padding: 10px 0 8px;
-	
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
 	color: #ffffff;
 }
 
+/* ------------------------------------------  header search */
+
 .search
 {
+	position: relative;
     float: left;
-	width: 160px;
+	width: 260px;
 }
+
+.search-input
+{
+	padding-left: 48px;
+	padding-right: 5px;
+	height: 42px;
+	width: 100%;
+	background: none;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	font-size: 17px;
+}
+
+.search-input[placeholder]          {color: #ffffff; font-size: 17px;}
+.search-input::-moz-placeholder     {color: #ffffff; font-size: 17px;} 
+.search-input:-moz-placeholder      {color: #ffffff; font-size: 17px;} 
+.search-input:-ms-input-placeholder {color: #ffffff; font-size: 17px;} 
+
+.search-input:focus
+{
+	position: relative;
+	outline: none;
+	color: #000000;
+	background: #ffffff;
+}
+
+.search-input + label:after 
+{
+	content: "\1f50d";
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	margin-top: -9px;
+	font-size: 17px;
+	line-height: 17px;
+	color: #ffffff;
+	font-family: "symbols-technomart";
+	opacity: 0.3;
+}
+
+.search-input:hover + label:after
+{
+	opacity: 1.0;
+}
+
+.search-input:focus + label:after
+{
+	color: #ee3643;
+	opacity: 1.0;
+}
+
+/* ------------------------------------------  header shop links */
 
 .shop-links
 {
     float: right;
 	width: 460px;
-	
 	text-align: right;
 }
 
@@ -217,7 +256,6 @@ body a
 	padding: 12px;
 	padding-right: 26px;
 	height: 100%;
-	
 	font-size: 17px;
 	line-height: 18px;
 }
@@ -261,18 +299,18 @@ body a
 {
 	padding-left: 20px;
 	padding-right: 22px;
-	background-color: #63a63e;
+	background: #63a63e;
 }
 
 .btn-order:hover
 {
-	background-color: #5fbb2d;
+	background: #5fbb2d;
 }
 
 .btn-order:active
 {
 	color: #b7c9af;
-	background-color: #518534;
+	background: #518534;
 }
 
 /* ------------------------------------------  header middle */
@@ -293,7 +331,6 @@ body a
 	margin: 0;
 	padding-left: 52px;
 	width: 320px;
-	
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
@@ -316,7 +353,6 @@ body a
 	border: 3px solid #ffffff;
 	padding: 10px;
 	padding-left: 32px;
-	
 	font-size: 21px;
 	line-height: 21px;
 	color: #e9292a;
@@ -328,7 +364,6 @@ body a
 	content: "\1f4de";
 	position: absolute;
 	left: 15px;
-	
 	color: #b7bfc8;
 	font-family: "symbols-technomart";
 }
@@ -352,13 +387,11 @@ body a
 	display: inline-block;
 	padding: 12px 25px;
 	margin-left: 10px;
-	
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 	text-transform: uppercase;
 	text-align: center;
-	
 	background-color: #ffffff;
 }
 
@@ -387,7 +420,6 @@ body a
 	content: "\2386";
 	position: absolute;
 	left: 10px;
-	
 	color: #c5c5c5;
 	font-family: "symbols-technomart";
 }
@@ -416,7 +448,6 @@ body a
 {
 	content: "";
 	position: absolute;
-	
 	color: #c5c5c5;
 	font-family: "symbols-technomart";
 }
@@ -457,7 +488,6 @@ body a
 .user-link
 {
 	padding: 0 16px;
-	
 	font-size: 16px;
 	line-height: 18px;
 	color: #32425c;
@@ -491,7 +521,6 @@ body a
 {
 	margin: 0;
 	padding: 0;
-	
 	list-style: none;
 	font-size: 0;
 	text-align: center;
@@ -501,7 +530,6 @@ body a
 {
     display: inline-block;
 	vertical-align: bottom;
-	
 	font-size: 17px;
 	line-height: 17px;
 	vertical-align: top;
@@ -511,7 +539,6 @@ body a
 {
 	display: block;
 	padding: 22px 30px;
-	
 	color: #ffffff;
   	text-decoration: none;
 }
@@ -575,7 +602,6 @@ body a
 	margin: 0;
 	margin-bottom: 12px;
 	padding: 0;
-	
 	font-size: 24px;
 	line-height: 30px;
 	color: #ffffff;
@@ -585,7 +611,6 @@ body a
 {
 	display: block;
 	min-width: 135px;
-	
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -619,7 +644,6 @@ body a
 	background-color: #f6b22d;
 }
 
-
 /* ------------------------------------------  slider */
 
 .slider
@@ -630,7 +654,6 @@ body a
     height: 266px;
     margin-right: 20px;
 	padding: 25px 22px;
-    
     background: #aca093 url(../img/slider/slider-bg-1.jpg) no-repeat 0 0;
 }
 
@@ -638,7 +661,6 @@ body a
 {
 	margin: 0;
 	padding: 0;
-	
 	font-size: 36px;
 	line-height: 36px;
 	color: #ffffff;
@@ -649,7 +671,6 @@ body a
 {
 	margin: 0;
 	padding: 0;
-	
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
@@ -669,7 +690,6 @@ body a
 	display: block;
 	position: absolute;
 	top: 112px;
-	
 	font-size: 45px;
 }
 
@@ -689,7 +709,6 @@ body a
 	width: 100%;
 	bottom: 25px;
 	left: 0;
-	
 	text-align: center;
 }
 
@@ -701,7 +720,6 @@ body a
 	width: 10px;
 	height: 10px;
 	margin: 5px;
-	
 	background: #ffffff;
 	border-radius: 5px;
 }
@@ -719,10 +737,8 @@ body a
 	right: 0;
 	bottom: 0;
 	top: 0;
-	
 	width: 6px;
 	height: 6px;
-	
 	background: #ef404c;
 	border-radius: 3px;
 }
@@ -732,7 +748,6 @@ body a
 .block-header
 {
     margin-bottom: 20px;
-    
 	background-color: #f7f3ec;
 }
 
@@ -741,7 +756,6 @@ body a
     float:left;
     margin: 0;
     padding: 30px;
-    
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
@@ -755,7 +769,6 @@ body a
 	min-width: 253px;
 	margin-right: 24px;
 	margin-top: 25px;
-	
 	background-color: #ee3643;
 }
 
@@ -769,7 +782,6 @@ body a
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
-	
 	text-align: center;
 }
 
@@ -780,7 +792,7 @@ body a
 
 .catalog-products .product:nth-child(3n)
 {
-	 margin-right: 0px;
+	margin-right: 0px;
 }
 
 .product-view
@@ -802,7 +814,6 @@ body a
 .product-name
 {
 	margin-bottom: 11px;
-	
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -812,7 +823,6 @@ body a
 .product-price-old
 {
 	margin-bottom: 10px;
-	
 	font-size: 17px;
 	line-height: 18px;
 	color: #999999;
@@ -822,13 +832,11 @@ body a
 	font-family: "PT Sans", "Arial", sans-serif;
 }
 
-/* ??? а как прижать ее к нижнему краю? */
 .product-price
 {
 	display: inline-block;
 	min-width: 140px;
 	margin-bottom: 19px;
-	
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
@@ -871,7 +879,6 @@ body a
 {
 	display: block;
 	height: 100%;
-	
 	border: 1px solid #e5e5e5;
 }
 
@@ -896,11 +903,9 @@ body a
 .services .container
 {
 	padding-bottom: 126px;
-	
 	background: #f2f6f8 url(../img/services/delivery.jpg) no-repeat 100% 100%;
 }
 
-/* ??? как сделать такую тень у списка сервисов? */
 .services-menu
 {
 	float: left;
@@ -913,11 +918,9 @@ body a
 {
 	display: block;
 	padding: 14px 22px;
-	
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: bold;
-	
 	background-color: #32425c;
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
@@ -1005,10 +1008,8 @@ body a
 {
     float: left;
 	width: 220px;
-	
     text-align: center;
-    
-    background-color: #ee3643;
+	background-color: #ee3643;
 	box-shadow: 0 5px 0 #b52933;
 }
 
@@ -1028,7 +1029,6 @@ body a
 {
 	display: block;
 	padding: 15px 0;
-	
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -1045,7 +1045,6 @@ body a
 	margin: 0;
 	margin-top: 35px;
 	padding: 0;
-	
 	list-style: none;
 	font-size: 0;
 	text-align: right;
@@ -1057,7 +1056,6 @@ body a
 	vertical-align: bottom;
 	margin-left: 60px;
 	margin-top: 0;
-	
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -1098,7 +1096,6 @@ body a
 	width: 600px;
 	margin: 0;
 	padding: 0;
-	
 	list-style: none;
 	font-size: 0;
 	text-align: right;
@@ -1110,7 +1107,6 @@ body a
 	vertical-align: top;
 	margin-left: 60px;
 	margin-top: 0;
-	
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -1137,11 +1133,9 @@ body a
 {
 	padding-top: 36px;
 	padding-bottom: 30px;
-	
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
-    
     background-color: #293449;
 }
 
@@ -1162,7 +1156,6 @@ body a
 	width: 200px;
 	margin: 0;
 	padding: 0 10px;
-	
 	text-align: center;
 }
 
@@ -1172,11 +1165,9 @@ body a
 	vertical-align: middle;
 	height: 40px;
 	width: 40px;
-	
 	font-size: 17px;
 	line-height: 40px;
 	text-align: center;
-	
 	background-color: #212a3a;
 	border-radius: 20px;
 }
@@ -1193,7 +1184,6 @@ body a
 {
 	float: right;
 	width: 380px;
-	
 	text-align: right;
 }
 
@@ -1204,7 +1194,6 @@ body a
 	margin-left: 40px;
 	margin-top: 0;
 	margin-right: 10px;
-	
 	text-align: left;
 }
 
@@ -1237,19 +1226,16 @@ body a
 	margin: 0;
 	margin-bottom: 20px;
 	padding: 30px;
-	
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
 	font-weight: normal;
 	text-transform: uppercase;
-	
 	background-color: #f2f6f8;
 }
 
 /* ------------------------------------------  breadcrumbs */
 
-/* ??? тут, кажется, должно быть что-то проще */
 .breadcrumbs 
 {
 	margin: 0;
@@ -1263,7 +1249,6 @@ body a
 	position: relative;
 	margin-right: 42px;
 	padding: 0;
-	
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
@@ -1276,7 +1261,6 @@ body a
 	content: "\3e";
 	position: absolute;
 	left: -25px;
-	
 	font-size: 16px;
 	line-height: 20px;
 	color: #b7bfc8;
@@ -1307,12 +1291,10 @@ body a
 {
 	margin-bottom: 20px;
 	padding: 19px 15px;
-	
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
 	text-transform: uppercase;
-	
 	background-color: #f7f3ec;
 	border-radius: 3px;
 }
@@ -1322,6 +1304,7 @@ input[type="radio"]
 {
 	display: none;
 }
+
 input[type="checkbox"] + label,
 input[type="radio"] + label
 {
@@ -1329,12 +1312,10 @@ input[type="radio"] + label
 	display: block;
 	margin: 20px 0;
 	padding-left: 35px;
-	
 	font-size: 15px;
 	line-height: 20px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
-	
 	cursor: pointer;
 }
 
@@ -1345,10 +1326,8 @@ input[type="radio"] + label::before
 	position: absolute;
 	top: 0;
 	left: 0;
-	
 	width: 28px;
 	height: 28px;
-	
 	color: #c1c1c1;
 	font-size: 28px;
 	font-family: "symbols-technomart";
@@ -1374,11 +1353,9 @@ input[type="radio"]:checked + label::before
 	content: "\25cf";
 }
 
-/* ??? а в Opera и Chrome это не работает =( */
 input[type="checkbox"]:hover + label::before,
 input[type="radio"]:hover + label::before
 {
-	/*color: #b5b5b5;*/
 	color: red;
 }
 
@@ -1424,13 +1401,11 @@ input[type="radio"]:hover + label::before
 	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 12px;
-	
 	font-size: 13px;
 	line-height: 14px;
 	color: #000000;
 	text-transform: uppercase;
 	text-align: center;
-	
 	background-color: #ffffff;
 	border-radius: 2px;
 	border: 1px solid #e5e5e5; 
@@ -1465,7 +1440,6 @@ input[type="radio"]:hover + label::before
 {
 	padding-top: 20px;
 	padding-bottom: 68px;
-	
 	background-color: #f2f6f8;
 }
 
@@ -1476,7 +1450,6 @@ input[type="radio"]:hover + label::before
 	margin: 0;
 	padding: 0;
 	padding-top: 48px;
-	
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
@@ -1489,7 +1462,6 @@ input[type="radio"]:hover + label::before
 	margin: 0;
 	padding: 0;
 	padding-top: 24px;
-	
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -1503,13 +1475,11 @@ input[type="radio"]:hover + label::before
 	list-style: none;
 }
 
-/* ??? как пунктам списка добавить красную линию слева? */
 .content li
 {
 	margin: 0;
 	padding: 0;
 	padding-top: 20px;
-	
 	font-size: 18px;
 	line-height: 20px;
 }
