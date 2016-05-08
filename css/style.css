@@ -782,6 +782,7 @@ body a
     border: 1px solid #e5e5e5;
     margin-bottom: 20px;
     margin-right: 20px;
+	padding: 10px;
 	text-align: center;
 }
 
@@ -834,13 +835,45 @@ body a
 
 .product-price
 {
+	position: relative;
 	display: inline-block;
 	min-width: 140px;
-	margin-bottom: 19px;
+	margin-bottom: 14px;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
 	font-family: "PT Sans", "Arial", sans-serif;
+	overflow: hidden;
+}
+
+.product-price:after
+{
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	right: -12px;
+	top: 25px;
+	transform: rotate(-45deg);
+	background: #ffffff;
+}
+
+.product-price:before
+{
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 20px;
+	right: -12px;
+	bottom: 26px;
+	transform: rotate(45deg);
+	background: #ffffff;
+}
+
+/* move price button to bottom */
+.product-name + .product-price
+{
+	margin-top: 28px;
 }
 
 /* ------------------------------------------  brands */
