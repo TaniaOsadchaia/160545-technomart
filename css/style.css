@@ -844,30 +844,33 @@ body a
 	font-weight: bold;
 	font-family: "PT Sans", "Arial", sans-serif;
 	overflow: hidden;
+	border-radius: 0;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
-.product-price:after
+.product-price:after 
 {
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 20px;
-	right: -12px;
-	top: 25px;
-	transform: rotate(-45deg);
-	background: #ffffff;
+	width: 0;
+	height: 0;
+	top: 0;
+	right: -25px; 
+	border: 22px solid transparent;
+	border-top: 22px solid #ffffff;
 }
 
-.product-price:before
+.product-price:before 
 {
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 20px;
-	right: -12px;
-	bottom: 26px;
-	transform: rotate(45deg);
-	background: #ffffff;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: -25px; 
+	border: 22px solid transparent;
+	border-bottom: 22px solid #ffffff;
 }
 
 /* move price button to bottom */
@@ -930,7 +933,7 @@ body a
 
 .services
 {
-	background-color: #f2f6f8
+	background: #f2f6f8
 }
 
 .services .container
