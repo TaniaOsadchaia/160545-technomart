@@ -611,37 +611,37 @@ body a
 {
 	display: block;
 	min-width: 135px;
-	background-color: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.1);
 }
 
 .category-btn:hover
 {
-	background-color: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
 }
 
 .category-btn:active
 {
-	background-color: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.3);
 }
 
 .fill-blue
 {
-	background-color: #4aafde;
+	background: #4aafde;
 }
 
 .fill-green
 {
-	background-color: #85d179;
+	background: #85d179;
 }
 
 .fill-purple
 {
-	background-color: #cc79d1;
+	background: #cc79d1;
 }
 
 .fill-yellow
 {
-	background-color: #f6b22d;
+	background: #f6b22d;
 }
 
 /* ------------------------------------------  slider */
@@ -784,6 +784,7 @@ body a
     margin-right: 20px;
 	padding: 10px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .index-products .product:nth-child(4n)
@@ -796,10 +797,99 @@ body a
 	margin-right: 0px;
 }
 
+.product:hover
+{
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.product:hover .product-view
+{
+	display: none;
+}
+
+.product:hover .product-control
+{
+	display: block;
+}
+
+.product-top-block
+{
+	height: 178px;
+}
+
+.product-control
+{
+	display: none;
+	margin-left: 32px;
+	padding-top: 40px;
+	width: 135px;
+}
+
+/* ------------------------------------------  product buy */
+
+.product-buy-btn
+{
+	position: relative;
+	display: block;
+	min-width: 135px;
+	margin-bottom: 10px;
+	background: #63a63e;
+	box-shadow: 0 3px 0 #367315;
+}
+
+.product-buy-btn:hover
+{
+	background: #5fbb2d;
+}
+
+.product-buy-btn:active
+{
+	background: #518534;
+	box-shadow: 0 3px 0 #518534;
+}
+
+.product-buy-btn::before
+{
+	content: "\62";
+	position: absolute;
+	left: 12px;
+	top: 0;
+	font-size: 17px;
+	line-height: 35px;
+	font-family: "symbols-technomart";
+	opacity: 0.3;
+}
+
+/* ------------------------------------------  product bookmark */
+
+.product-bookmark-btn
+{
+	display: block;
+	min-width: 135px;
+	color: #32425c;
+	background: transparent;
+	border: 3px solid #63a63e;
+}
+
+.product-bookmark-btn:hover
+{
+	background: transparent;
+	border: 3px solid #32425c;
+}
+
+.product-bookmark-btn:active
+{
+	background: transparent;
+	border: 3px solid #32425c;
+	opacity: 0.3;
+}
+
+/* ------------------------------------------  product view */
+
 .product-view
 {
 	position: relative;
-	height: 178px;
+	height: 100%;
 }
 
 .product-view img
@@ -839,12 +929,16 @@ body a
 	display: inline-block;
 	min-width: 140px;
 	margin-bottom: 14px;
+	padding: 10px;
 	font-size: 17px;
 	line-height: 18px;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
 	font-weight: bold;
 	font-family: "PT Sans", "Arial", sans-serif;
 	overflow: hidden;
-	border-radius: 0;
+	background: #ee3643;
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 2px;
 }
@@ -877,6 +971,30 @@ body a
 .product-name + .product-price
 {
 	margin-top: 28px;
+}
+
+/* ------------------------------------------  special */
+
+.special
+{
+	position: relative;
+}
+
+.special::after
+{
+	content: "";
+	position: absolute;
+	right: -1px;
+	top : -1px;
+	width: 60px;
+	height: 59px;
+	background: url(../img/icon-special.png) no-repeat center center;
+}
+
+.categories .special::after
+{
+	right: 0;
+	top : 0;
 }
 
 /* ------------------------------------------  brands */
@@ -1432,6 +1550,7 @@ input[type="radio"]:hover + label::before
 .pagination span
 {
 	display: inline-block;
+	vertical-align: bottom;
 	min-width: 38px;
 	margin: 0;
 	margin-right: 10px;
