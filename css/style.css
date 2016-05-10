@@ -1488,6 +1488,7 @@ body a
 	line-height: 18px;
 	color: #000000;
 	text-transform: uppercase;
+	font-family: "PT Sans", "Arial", sans-serif;
 	background-color: #f7f3ec;
 	border-radius: 3px;
 }
@@ -1562,19 +1563,84 @@ input[type="radio"]:hover + label::before
 .sort-title
 {
 	float: left;
-	width: 160px;
+	width: 120px;
 }
 
 .sort-types
 {
-	float: right;
-	width: 460px;
+	float: left;
+	width: 480px;
+	font-size: 0;
+	text-align: right;
+}
+
+.sort-type
+{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	margin-right: 22px;
+	margin-left: 40px;
+	margin-bottom: -1px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	opacity: 0.3;
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sort-type-current
+{
+	margin-right: 32px;
+	color: #ee3643;
+	opacity: 1.0;
+	border-bottom: none;
 }
 
 .sort-directions
 {
 	float: right;
-	width: 80px;
+	width: 70px;
+	font-size: 0;
+	text-align: right;
+}
+
+.sort-direction
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	padding-right: 7px;
+	width: 33px;
+	height: 18px;
+}
+
+.sort-direction::after
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 16px;
+	color: #c1c1c1;
+	font-size: 23px;
+	font-family: "symbols-technomart";
+}
+
+.sort-ascending::after
+{
+	content: "\25b2";
+}
+
+.sort-descending::after
+{
+	content: "\25bc";
+}
+
+.sort-direction-current::after
+{
+	color: #ee3643;
 }
 
 /* ------------------------------------------  pagination */
