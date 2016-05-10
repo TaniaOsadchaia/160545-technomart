@@ -1389,42 +1389,82 @@ body a
 
 /* ------------------------------------------  breadcrumbs */
 
-.breadcrumbs 
+.breadcrumbs ul 
 {
 	margin: 0;
-	margin-bottom: 17px;
-	margin-left: 18px;
+    margin-top: -8px;
+    margin-bottom: 14px;
 	padding: 0;
+	list-style: none;
+	font-size: 0;
 }
 
-.breadcrumb
+.breadcrumbs li
 {
-	position: relative;
-	margin-right: 42px;
-	padding: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: center;
+    padding: 0 20px;
 	font-size: 13px;
-	line-height: 18px;
-	color: #000000;
-	text-decoration: none; 
-	text-transform: uppercase;
+	line-height: 20px;
+    color: #000000;
+    text-decoration: none; 
+    text-transform: uppercase;
 }
 
-.breadcrumb::before
+.breadcrumbs li + li::before
 {
 	content: "\3e";
 	position: absolute;
-	left: -25px;
-	font-size: 16px;
+	left: -5px;
+    top: 50%;
+    margin-top: -10px;
+    font-size: 16px;
 	line-height: 20px;
 	color: #b7bfc8;
 	font-family: "symbols-technomart";
 }
 
-.breadcrumb:first-child::before
+.breadcrumbs a 
 {
-	content: "\1f3e0";
-	left: -18px;
+	display: block;
+    color: #000000;
+  	text-decoration: none;
 }
+
+.breadcrumb-home::before 
+{
+    content: "\1f3e0";
+    font-size: 16px;
+	line-height: 20px;
+    color: #b7bfc8;
+    font-family: "symbols-technomart";
+}
+
+.breadcrumbs li:first-child
+{
+    margin-left: 0;
+    padding-left: 0;
+    color: #b7bfc8;
+}
+
+/*.breadcrumb-home
+{
+    position: relative;
+}
+
+.breadcrumb-home::before
+{
+    content: "\1f3e0";
+	position: absolute;
+    left: 0;
+    top: -16px;
+    font-size: 16px;
+	line-height: 20px;
+	color: #b7bfc8;
+	font-family: "symbols-technomart";
+}*/
+
 
 /* ------------------------------------------  filters + catalog */
 
