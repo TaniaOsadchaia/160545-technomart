@@ -1584,8 +1584,7 @@ input[type="radio"]:hover + label::before
 	margin-bottom: -1px;
 	font-size: 13px;
 	line-height: 18px;
-	color: #000000;
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #ee3643;
 }
 
@@ -1593,7 +1592,18 @@ input[type="radio"]:hover + label::before
 {
 	margin-right: 32px;
 	color: #ee3643;
-	opacity: 1.0;
+	border-bottom: none;
+}
+
+.sort-link:hover
+{
+	color: #000000;
+	border-bottom: 1px solid #ee3643;
+}
+
+.sort-link:active
+{
+	color: #ee3643;
 	border-bottom: none;
 }
 
@@ -1623,7 +1633,7 @@ input[type="radio"]:hover + label::before
 	position: absolute;
 	top: 0;
 	left: 16px;
-	color: #c1c1c1;
+	color: rgba(0, 0, 0, 0.3);
 	font-size: 23px;
 	font-family: "symbols-technomart";
 }
@@ -1639,6 +1649,17 @@ input[type="radio"]:hover + label::before
 }
 
 .sort-direction-current::after
+{
+	color: #ee3643;
+	opacity: 1.0;
+}
+
+.sort-direction-link:hover::after
+{
+	color: #000000;
+}
+
+.sort-direction-link:active::after
 {
 	color: #ee3643;
 }
