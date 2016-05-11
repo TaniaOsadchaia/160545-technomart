@@ -112,18 +112,18 @@ body a
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	background-color: #ee3643;
+	background: #ee3643;
 	border-radius: 2px;
 }
 
 .btn:hover
 {
-	background-color: #ca2c37;
+	background: #ca2c37;
 }
 
 .btn:active
 {
-	background-color: #ba2732;
+	background: #ba2732;
 }
 
 /* ------------------------------------------  header */
@@ -131,7 +131,7 @@ body a
 .main-header
 {
 	margin-bottom: 60px;
-	background-color: #f1f5f7;
+	background: #f1f5f7;
 }
 
 .main-header-catalog
@@ -143,7 +143,7 @@ body a
 {
     margin-bottom: 46px;
 	min-height: 42px;
-	background-color: #293449;
+	background: #293449;
 }
 
 /* ------------------------------------------  header logo */
@@ -154,19 +154,19 @@ body a
 	width: 220px;
 	height: 100%;
 	text-align: center;
-	background-color: #ee3643;
+	background: #ee3643;
 	box-shadow: 0 5px 0 #b52933;
 }
 
 .logo:hover
 {
-	background-color: #ca2c37;
+	background: #ca2c37;
 	box-shadow: 0 5px 0 #9a212a;
 }
 
 .logo:active
 {
-	background-color: #ba2732;
+	background: #ba2732;
 	box-shadow: 0 5px 0 #8e1e26;
 }
 
@@ -498,11 +498,14 @@ body a
 
 .user-links
 {
+    margin-top: 10px;
 	margin-left: 10px;
+    font-size: 0;
 }
 
 .user-link
 {
+    position: relative;
 	padding: 0 16px;
 	font-size: 16px;
 	line-height: 18px;
@@ -518,6 +521,19 @@ body a
 .user-link:active
 {
 	color: #cacfd5;
+}
+
+.user-link + .user-link::before
+{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: -2px;
+    top: 50%;
+    margin-top: -2px;
+    background: #32425c;
+    border-radius: 2px;
 }
 
 /* ------------------------------------------  header bottom */
