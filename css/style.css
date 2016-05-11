@@ -247,15 +247,16 @@ body a
     float: right;
 	width: 460px;
 	text-align: right;
+    font-size: 0;
 }
 
 .shop-link
 {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	padding: 12px;
 	padding-right: 26px;
-	height: 100%;
+    min-height: 42px;
 	font-size: 17px;
 	line-height: 18px;
 }
@@ -311,6 +312,21 @@ body a
 {
 	color: #b7c9af;
 	background: #518534;
+}
+
+.btn-basket-filled
+{
+    background: #ee3643;
+}
+
+.btn-basket-filled:hover
+{
+	background-color: #ca2c37;
+}
+
+.btn-basket-filled:active
+{
+	background-color: #ba2732;
 }
 
 /* ------------------------------------------  header middle */
@@ -1447,24 +1463,6 @@ body a
     padding-left: 0;
     color: #b7bfc8;
 }
-
-/*.breadcrumb-home
-{
-    position: relative;
-}
-
-.breadcrumb-home::before
-{
-    content: "\1f3e0";
-	position: absolute;
-    left: 0;
-    top: -16px;
-    font-size: 16px;
-	line-height: 20px;
-	color: #b7bfc8;
-	font-family: "symbols-technomart";
-}*/
-
 
 /* ------------------------------------------  filters + catalog */
 
