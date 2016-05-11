@@ -1778,3 +1778,62 @@ input[type="radio"]:hover + label::before
 	font-size: 18px;
 	line-height: 20px;
 }
+
+/* ------------------------------------------  write us */
+
+.feedback-popup-overlay
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.feedback-popup
+{
+    position: absolute;
+    width: 620px;
+    height: 422px;
+    left: 50%;
+    top: 50%;
+    margin-left: -310px;
+    margin-top: -211px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.feedback-popup::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    left: 0;
+    top: 0;
+    background: #ee3643;
+}
+
+.feedback-bottom
+{
+    background: #f1f1f1;
+}
+
+input[type="text"]
+{
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    
+    outline: none;
+    height: 24px;
+    width: 120px;
+    font-size: 11px;
+    color: #cccccc;
+    background: #ffffff;
+}
+
