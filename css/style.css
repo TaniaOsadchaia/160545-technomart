@@ -1882,6 +1882,11 @@ input[type="radio"]:hover + label::before
 
 /* ------------------------------------------  map popup */
 
+.map-popup-overlay
+{
+	display: none;
+}
+
 .map-popup
 {
     position: absolute;
@@ -1903,6 +1908,11 @@ input[type="radio"]:hover + label::before
 }
 
 /* ------------------------------------------  feedback popup */
+
+.feedback-popup-overlay
+{
+	display: none;
+}
 
 .feedback-popup
 {
