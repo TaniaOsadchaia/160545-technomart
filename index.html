@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" >
 	</head>
 	<body>
-        <div class="feedback-popup-overlay popup-overlay">
+        <div class="feedback-popup-overlay popup-overlay hidden">
             <div class="feedback-popup popup">
                 <div class="close-btn"></div>
                 <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
@@ -37,7 +37,7 @@
                 </form>
             </div>
         </div>
-        <div class="map-popup-overlay popup-overlay">
+        <div class="map-popup-overlay popup-overlay hidden">
             <div class="map-popup">
                 <div class="close-btn"></div>
             </div>
@@ -435,5 +435,21 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			var link = document.querySelector(".info-map-btn");
+			link.addEventListener("click", function(event)
+			{
+				event.preventDefault();
+				var popup = document.querySelector(".feedback-popup-overlay");
+				popup.classList.remove("hidden");
+				
+				var btnClose = popup.querySelector(".close-btn");
+				btnClose.addEventListener("click", function(event)
+				{
+					event.preventDefault();
+					popup.classList.add("hidden");
+				});
+			});
+		</script>
 	</body>
 </html>

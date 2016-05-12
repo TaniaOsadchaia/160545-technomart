@@ -1869,6 +1869,11 @@ input[type="radio"]:hover + label::before
 
 /* ------------------------------------------  popup */
 
+.hidden
+{
+	display: none;
+}
+
 .popup-overlay
 {
     position: fixed;
@@ -1913,11 +1918,6 @@ input[type="radio"]:hover + label::before
 
 /* ------------------------------------------  map popup */
 
-.map-popup-overlay
-{
-	display: none;
-}
-
 .map-popup
 {
     position: absolute;
@@ -1939,11 +1939,6 @@ input[type="radio"]:hover + label::before
 }
 
 /* ------------------------------------------  feedback popup */
-
-.feedback-popup-overlay
-{
-	display: none;
-}
 
 .feedback-popup
 {
@@ -2055,11 +2050,6 @@ input[type="radio"]:hover + label::before
 }
 
 /* ------------------------------------------  basket popup */
-
-.added-to-basket-popup-overlay
-{
-	display: none;
-}
 
 .added-to-basket-popup
 {
