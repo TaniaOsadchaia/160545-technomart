@@ -1572,6 +1572,32 @@ input[type="radio"]:hover + label::before
 	border-top: 1px solid #e5e5e5;
 }
 
+.filters-submit-btn
+{
+    min-width: 140px;
+    outline: none;
+    color: #000000;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 2px;
+	border: 1px solid #e5e5e5; 
+    cursor: pointer;
+}
+
+.filters-submit-btn:hover
+{
+    color: #000000;
+    background: #ffffff;
+	border: 1px solid #bdc6ca; 
+}
+
+.filters-submit-btn:active
+{
+    color: #000000;
+    background: #ffffff;
+	border: 1px solid #ee3643; 
+}
+
 /* ------------------------------------------  sort */
 
 .sort-title
@@ -1701,7 +1727,7 @@ input[type="radio"]:hover + label::before
 	color: #000000;
 	text-transform: uppercase;
 	text-align: center;
-	background-color: #ffffff;
+	background: #ffffff;
 	border-radius: 2px;
 	border: 1px solid #e5e5e5; 
 }
@@ -1988,6 +2014,7 @@ input[type="radio"]:hover + label::before
 {
     width: 100%;
     border: none;
+    outline: none;
     cursor: pointer;
 }
 
