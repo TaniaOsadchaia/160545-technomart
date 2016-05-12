@@ -1779,6 +1779,50 @@ input[type="radio"]:hover + label::before
 	line-height: 20px;
 }
 
+/* ------------------------------------------  close btn */
+
+.close-btn
+{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.close-btn::before,
+.close-btn::after
+{
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 8px;
+    width: 25px;
+    height: 5px;
+    background: #ee3643;
+}
+
+.close-btn::before
+{
+    transform: rotate(45deg);
+}
+
+.close-btn::after
+{
+    transform: rotate(-45deg);
+}
+
+.close-btn:hover::before,
+.close-btn:hover::after
+{
+    background: #ca2c37;
+}
+
+.close-btn:active::before,
+.close-btn:active::after
+{
+    background: #ba2732;
+}
+
 /* ------------------------------------------  write us */
 
 .feedback-popup-overlay
@@ -1805,6 +1849,11 @@ input[type="radio"]:hover + label::before
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
+.feedback-form
+{
+    padding-top: 54px;
+}
+
 .feedback-popup::before
 {
     content: "";
@@ -1816,24 +1865,105 @@ input[type="radio"]:hover + label::before
     background: #ee3643;
 }
 
-.feedback-bottom
+.feedback-center-block
 {
+    width: 460px;
+    margin: 0 auto;
+}
+
+.feedback-columns
+{
+    margin-bottom: 22px;
+}
+
+.feedback-content
+{
+    margin-bottom: 37px;
+}
+
+.feedback-column-left
+{
+    float: left;
+    width: 220px;
+}
+
+.feedback-column-right
+{
+    float: right;
+    width: 220px;
+}
+
+.feedback-form label
+{
+    display: block;
+    margin-bottom: 9px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.feedback-form input[type="text"]
+{
+    display: block;
+    padding: 10px 14px;
+    outline: none;
+    border: 2px solid #cccccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    height: 38px;
+    width: 100%;
+    color: #999999;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    background: #ffffff;
+}
+
+.feedback-content-block
+{
+    margin-bottom: 37px;
+}
+
+.feedback-content
+{
+    display: block;
+    padding: 10px 14px;
+    outline: none;
+    resize: none;
+    border: 2px solid #cccccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    height: 114px;
+    width: 100%;
+    color: #999999;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    background: #ffffff;
+}
+
+.feedback-submit-block
+{
+    padding: 37px 0;
     background: #f1f1f1;
 }
 
-input[type="text"]
+.feedback-submit
 {
-    border: 1px solid #cccccc;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    
-    outline: none;
-    height: 24px;
-    width: 120px;
-    font-size: 11px;
-    color: #cccccc;
-    background: #ffffff;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-popup .close-btn
+{
+    float: right;
+    margin-top: 16px;
+    margin-right: 10px;
 }
 

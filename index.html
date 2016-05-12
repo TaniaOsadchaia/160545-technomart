@@ -11,14 +11,29 @@
 	<body>
         <div class="feedback-popup-overlay">
             <div class="feedback-popup">
+                <div class="close-btn"></div>
                 <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-                    <label for="feedback-name">Ваше имя:</label>
-                    <input id="feedback-name" name="feedback-name" type="text">
-				    <label for="feedback-mail">Ваш e-mail:</label>
-                    <input id="feedback-mail" name="feedback-mail" type="text">
-                    <label for="feedback-content">Текст письма:</label>
-                    <textarea id="feedback-content" name="feedback-content"></textarea>
-                    <input class="feedback-submit btn" type="submit" value="Отправить">
+                    <div class="feedback-center-block">
+                        <div class="feedback-columns clearfix">
+                            <div class="feedback-column-left">
+                                <label for="feedback-name">Ваше имя:</label>
+                                <input id="feedback-name" name="feedback-name" type="text" value="Представьтесь, пожалуйста">
+                            </div>
+                            <div class="feedback-column-right">
+                                <label for="feedback-mail">Ваш e-mail:</label>
+                                <input id="feedback-mail" name="feedback-mail" type="text" value="Для отправки ответа">
+                            </div>
+                        </div>
+                        <div class="feedback-content-block">
+                            <label for="feedback-content">Текст письма:</label>
+                            <textarea class="feedback-content" id="feedback-content" name="feedback-content">В свободной форме</textarea>
+                        </div>
+                    </div>
+                    <div class="feedback-submit-block">
+                        <div class="feedback-center-block">
+                            <input class="feedback-submit btn" type="submit" value="Отправить">
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
