@@ -1170,7 +1170,24 @@ body a
 	margin-bottom: 30px;
 }
 
-.info-map-btn
+.info-map:hover
+{
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.info-map:active
+{
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.map-btn
+{
+	display: block;
+	width: 300px;
+	height: 158px;
+}
+
+.feedback-btn
 {
 	display: block;
 }

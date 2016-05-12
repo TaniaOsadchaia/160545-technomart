@@ -9,39 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" >
 	</head>
 	<body>
-        <div class="feedback-popup-overlay popup-overlay hidden">
-            <div class="feedback-popup popup">
-                <div class="close-btn"></div>
-                <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
-                    <div class="feedback-center-block">
-                        <div class="feedback-columns clearfix">
-                            <div class="feedback-column-left">
-                                <label for="feedback-name">Ваше имя:</label>
-                                <input id="feedback-name" name="feedback-name" type="text" value="Представьтесь, пожалуйста">
-                            </div>
-                            <div class="feedback-column-right">
-                                <label for="feedback-mail">Ваш e-mail:</label>
-                                <input id="feedback-mail" name="feedback-mail" type="text" value="Для отправки ответа">
-                            </div>
-                        </div>
-                        <div class="feedback-content-block">
-                            <label for="feedback-content">Текст письма:</label>
-                            <textarea class="feedback-content" id="feedback-content" name="feedback-content">В свободной форме</textarea>
-                        </div>
-                    </div>
-                    <div class="feedback-submit-block">
-                        <div class="feedback-center-block">
-                            <input class="feedback-submit btn" type="submit" value="Отправить">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="map-popup-overlay popup-overlay hidden">
-            <div class="map-popup">
-                <div class="close-btn"></div>
-            </div>
-        </div>
 		<header class="main-header">
 			<div class="header-top">
 				<div class="container clearfix">
@@ -356,9 +323,11 @@
 								заехав в наш офис:
 							</p>
 							<div class="info-map">
-								<img src="img/map/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19">
+								<a class="map-btn" href="#">
+									<img src="img/map/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19">
+								</a>
 							</div>
-							<a class="info-map-btn btn" href="#">Заблудились? Напишите нам!</a>
+							<a class="feedback-btn btn" href="#">Заблудились? Напишите нам!</a>
 						</div>
 					</div>
 				</div>
@@ -435,21 +404,63 @@
 				</div>
 			</div>
 		</footer>
+		<div class="feedback-popup-overlay popup-overlay hidden">
+            <div class="feedback-popup popup">
+                <div class="close-btn"></div>
+                <form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+                    <div class="feedback-center-block">
+                        <div class="feedback-columns clearfix">
+                            <div class="feedback-column-left">
+                                <label for="feedback-name">Ваше имя:</label>
+                                <input id="feedback-name" name="feedback-name" type="text" placeholder="Представьтесь, пожалуйста">
+                            </div>
+                            <div class="feedback-column-right">
+                                <label for="feedback-mail">Ваш e-mail:</label>
+                                <input id="feedback-mail" name="feedback-mail" type="text" placeholder="Для отправки ответа">
+                            </div>
+                        </div>
+                        <div class="feedback-content-block">
+                            <label for="feedback-content">Текст письма:</label>
+                            <textarea class="feedback-content" id="feedback-content" name="feedback-content" placeholder="В свободной форме"></textarea>
+                        </div>
+                    </div>
+                    <div class="feedback-submit-block">
+                        <div class="feedback-center-block">
+                            <input class="feedback-submit btn" type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="map-popup-overlay popup-overlay hidden">
+            <div class="map-popup">
+                <div class="close-btn"></div>
+            </div>
+        </div>
 		<script>
-			var link = document.querySelector(".info-map-btn");
-			link.addEventListener("click", function(event)
+			
+			function createPopupShowBehaviour(btnShowSelector, popupSelector, btnCloseSelector)
 			{
-				event.preventDefault();
-				var popup = document.querySelector(".feedback-popup-overlay");
-				popup.classList.remove("hidden");
-				
-				var btnClose = popup.querySelector(".close-btn");
-				btnClose.addEventListener("click", function(event)
+				var btnShow = document.querySelector(btnShowSelector);
+				btnShow.addEventListener("click", function(event)
 				{
 					event.preventDefault();
-					popup.classList.add("hidden");
+					
+					var popup = document.querySelector(popupSelector);
+					popup.classList.remove("hidden");
+
+					var btnClose = popup.querySelector(btnCloseSelector);
+					btnClose.addEventListener("click", function(event)
+					{
+						event.preventDefault();
+						popup.classList.add("hidden");
+					});
 				});
-			});
+			}
+			
+			createPopupShowBehaviour(".feedback-btn", ".feedback-popup-overlay", ".close-btn");
+			createPopupShowBehaviour(".map-btn", ".map-popup-overlay", ".close-btn");
+			
 		</script>
 	</body>
 </html>
