@@ -1792,17 +1792,35 @@ input[type="radio"]:hover + label::before
 {
 	margin: 0;
 	padding: 0;
-	padding-left: 36px;
 	list-style: none;
 }
 
 .content li
 {
 	margin: 0;
+	margin-top: 20px;
 	padding: 0;
-	padding-top: 20px;
 	font-size: 18px;
 	line-height: 20px;
+	list-style: none;
+}
+
+.content-list li
+{
+	position: relative;
+	padding-left: 36px;
+}
+
+.content-list li::before
+{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -1px;
+	width: 25px;
+	height: 2px;
+	background: #ee3643;
 }
 
 /* ------------------------------------------  close btn */
