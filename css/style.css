@@ -254,9 +254,10 @@ body a
 {
 	display: inline-block;
 	vertical-align: top;
+	width: 150px;
+	min-height: 42px;
 	padding: 12px;
-	padding-right: 26px;
-    min-height: 42px;
+	text-align: left;
 	font-size: 17px;
 	line-height: 18px;
 }
