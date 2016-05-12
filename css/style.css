@@ -1823,9 +1823,9 @@ input[type="radio"]:hover + label::before
     background: #ba2732;
 }
 
-/* ------------------------------------------  write us */
+/* ------------------------------------------  popup */
 
-.feedback-popup-overlay
+.popup-overlay
 {
     position: fixed;
     left: 0;
@@ -1835,6 +1835,30 @@ input[type="radio"]:hover + label::before
     z-index: 999;
     background: rgba(0, 0, 0, 0.3);
 }
+
+/* ------------------------------------------  map popup */
+
+.map-popup
+{
+    position: absolute;
+    width: 940px;
+    height: 446px;
+    left: 50%;
+    top: 50%;
+    margin-left: -470px;
+    margin-top: -223px;
+    background: #e9e5dc url(../img/map/map-popup-1.jpg) no-repeat 0 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.map-popup .close-btn
+{
+    float: right;
+    margin-top: 9px;
+    margin-right: 9px;
+}
+
+/* ------------------------------------------  feedback popup */
 
 .feedback-popup
 {
@@ -1847,6 +1871,13 @@ input[type="radio"]:hover + label::before
     margin-top: -211px;
     background: #ffffff;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.feedback-popup .close-btn
+{
+    float: right;
+    margin-top: 16px;
+    margin-right: 10px;
 }
 
 .feedback-form
@@ -1960,10 +1991,5 @@ input[type="radio"]:hover + label::before
     cursor: pointer;
 }
 
-.feedback-popup .close-btn
-{
-    float: right;
-    margin-top: 16px;
-    margin-right: 10px;
-}
+
 
