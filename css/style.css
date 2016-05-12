@@ -889,6 +889,7 @@ body a
 	line-height: 35px;
 	font-family: "symbols-technomart";
 	opacity: 0.3;
+	text-transform: none;
 }
 
 /* ------------------------------------------  product bookmark */
