@@ -1010,23 +1010,24 @@ body a
 .special
 {
 	position: relative;
+	overflow: hidden;
 }
 
 .special::after
 {
-	content: "";
+	content: "new";
 	position: absolute;
-	right: -1px;
-	top : -1px;
-	width: 60px;
-	height: 59px;
-	background: url(../img/icon-special.png) no-repeat center center;
-}
-
-.categories .special::after
-{
-	right: 0;
-	top : 0;
+	width: 84px;
+	height: 28px;
+	top: 5px;
+	right: -23px;
+	color: #ffffff;
+	font-weight: normal; 
+	font-size: 16px; 
+	line-height: 28px;
+	text-align: center;
+	background: #ee3643;
+	transform: rotate(45deg);
 }
 
 /* ------------------------------------------  brands */
