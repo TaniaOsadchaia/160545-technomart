@@ -1527,14 +1527,14 @@ body a
 	border-radius: 3px;
 }
 
-input[type="checkbox"],
-input[type="radio"]
+.filter-checkbox,
+.filter-radio
 {
 	display: none;
 }
 
-input[type="checkbox"] + label,
-input[type="radio"] + label
+.filter-checkbox + label,
+.filter-radio + label
 {
 	position: relative;
 	display: block;
@@ -1547,8 +1547,8 @@ input[type="radio"] + label
 	cursor: pointer;
 }
 
-input[type="checkbox"] + label::before,
-input[type="radio"] + label::before
+.filter-checkbox + label::before,
+.filter-radio + label::before
 {
 	content: "";
 	position: absolute;
@@ -1561,30 +1561,37 @@ input[type="radio"] + label::before
 	font-family: "symbols-technomart";
 }
 
-input[type="checkbox"] + label::before
+.filter-checkbox + label::before
 {
 	content: "\2610";
 }
 
-input[type="checkbox"]:checked + label::before
+.filter-checkbox:checked + label::before
 {
 	content: "\2611";
 }
 
-input[type="radio"] + label::before
+.filter-radio + label::before
 {
 	content: "\25cb";
 }
 
-input[type="radio"]:checked + label::before
+.filter-radio:checked + label::before
 {
 	content: "\25cf";
 }
 
-input[type="checkbox"]:hover + label::before,
-input[type="radio"]:hover + label::before
+.filter-checkbox + label:hover::before,
+.filter-radio + label:hover::before
 {
-	color: red;
+	color: #b5b5b5;
+}
+
+.filter-checkbox:disabled + label,
+.filter-radio:disabled + label
+{
+	opacity: 0.4;
+	cursor: default;
 }
 
 .filter + .filter
