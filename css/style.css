@@ -686,11 +686,79 @@ body a
     width: 620px;
     height: 266px;
     margin-right: 20px;
-	padding: 25px 22px;
-    background: #aca093 url(../img/slider/slider-bg-1.jpg) no-repeat 0 0;
+    background: yellow;
 }
 
-.slider-header h3
+.slider input[type=radio] 
+{
+    position: absolute;
+    opacity: 0;
+}
+
+.slider-controls
+{
+    position: absolute;
+    bottom: 36px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.slider-controls label
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slider-btn-1:checked ~ .slider-controls label[for="slider-btn-1"],
+#slider-btn-2:checked ~ .slider-controls label[for="slider-btn-2"] 
+{ 
+    background: #ee3643;
+}
+
+#slider-btn-1:checked ~ .slides .slide:nth-child(1),
+#slider-btn-2:checked ~ .slides .slide:nth-child(2)
+{ 
+    display: block;
+}
+
+.slide
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide:nth-child(1)
+{
+    background: transparent url('../img/slider/slider-bg-1.jpg') no-repeat 0 0;
+}
+
+.slide:nth-child(2)
+{
+    background: transparent url('../img/slider/slider-bg-2.jpg') no-repeat 0 0;
+}
+
+.slide-content
+{
+    padding: 23px 26px;
+}
+
+.slide-title
 {
 	margin: 0;
 	padding: 0;
@@ -700,7 +768,7 @@ body a
 	text-transform: uppercase;
 }
 
-.slider-header p
+.slide-description
 {
 	margin: 0;
 	padding: 0;
@@ -717,63 +785,37 @@ body a
 	min-width: 195px;
 }
 
-.slider-prev,
-.slider-next
+.slider-btn-prev,
+.slider-btn-next
 {
+    position: relative;
 	display: block;
-	position: absolute;
-	top: 112px;
-	font-size: 45px;
 }
 
-.slider-prev
+.slider-btn-prev::before,
+.slider-btn-next::before
 {
-	left: 0;
+    content: "";
+    position: absolute;
+    top: 112px;
+    color: #ffffff;
+    font-size: 45px;
+    line-height: 45px;
+    font-family: "symbols-technomart";
+    text-transform: none;
+    cursor: pointer;
 }
 
-.slider-next
+.slider-btn-prev::before
 {
-	right: 0;
+    content: "\3c";
+    left: 23px;
 }
 
-.slider-pagination
+.slider-btn-next::before
 {
-	position: absolute;
-	width: 100%;
-	bottom: 25px;
-	left: 0;
-	text-align: center;
-}
-
-.slider-pagination a,
-.slider-pagination span
-{
-	display: inline-block;
-	vertical-align: top;
-	width: 10px;
-	height: 10px;
-	margin: 5px;
-	background: #ffffff;
-	border-radius: 5px;
-}
-
-.slider-pagination span
-{
-	position: relative;
-}
-
-.slider-pagination-current
-{
-	position: absolute;
-	margin: auto;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	width: 6px;
-	height: 6px;
-	background: #ef404c;
-	border-radius: 3px;
+    content: "\3e";
+    right: 23px;
 }
 
 /* ------------------------------------------  block */
@@ -1096,16 +1138,37 @@ body a
 
 .services-menu
 {
+    position: relative;
 	float: left;
 	width: 240px;
+    height: 100%;
 	margin-right: 80px;
 	margin-top: 50px;
 }
 
-.services-menu-link
+.services-menu::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -139px;
+    width: 10px;
+    height: 279px;
+    background: transparent url(../img/services/beauty.png) no-repeat 100% 100%;
+    opacity: 0.25;
+}
+
+.service-radio
+{
+    display: none;
+}
+
+.service-radio + label
 {
 	display: block;
 	padding: 14px 22px;
+    color: #ffffff;
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: bold;
@@ -1114,15 +1177,14 @@ body a
 	border-bottom: 1px solid #293449;
 }
 
-.services-menu a:hover
+.service-radio + label:hover
 {
 	background-color: #293449;
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
 }
 
-.services-menu a:active,
-.services-menu span
+.service-radio:checked + label
 {
 	color: #32425c;
 	background-color: #ffffff;
@@ -1133,7 +1195,7 @@ body a
 .service
 {
 	float: left;
-	width: 300px;
+	width: 400px;
 }
 
 /* ------------------------------------------  infos */
@@ -1803,6 +1865,7 @@ body a
 	color: #000000;
 	font-weight: normal;
 	text-transform: uppercase;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .content p
@@ -1813,6 +1876,7 @@ body a
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .content ul
