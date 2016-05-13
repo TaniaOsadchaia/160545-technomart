@@ -1132,21 +1132,28 @@ body a
 
 .services .container
 {
-	padding-bottom: 126px;
-	background: #f2f6f8 url(../img/services/delivery.jpg) no-repeat 100% 100%;
+	/*padding-bottom: 126px;
+	background: #f2f6f8 url(../img/services/delivery.jpg) no-repeat 100% 100%;*/
 }
 
-.services-menu
+.services-slider-controls
 {
     position: relative;
 	float: left;
 	width: 240px;
     height: 100%;
-	margin-right: 80px;
 	margin-top: 50px;
+    margin-right: 80px;
+    margin-bottom: 102px;
 }
 
-.services-menu::after
+.services-slides
+{
+    float: left;
+    width: 620px;
+}
+
+.services-slider-controls::after
 {
     content: "";
     position: absolute;
@@ -1159,43 +1166,76 @@ body a
     opacity: 0.25;
 }
 
-.service-radio
+.services-slider-controls label
 {
-    display: none;
-}
-
-.service-radio + label
-{
-	display: block;
+    display: block;
 	padding: 14px 22px;
     color: #ffffff;
 	font-size: 21px;
 	line-height: 30px;
 	font-weight: bold;
-	background-color: #32425c;
+	background: #32425c;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
+    cursor: pointer;
+}
+
+.services-slider-controls label:hover
+{
+    background: #293449;
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
 }
 
-.service-radio + label:hover
+.services input[type=radio] 
 {
-	background-color: #293449;
-	border-top: 1px solid #405069;
-	border-bottom: 1px solid #293449;
+    position: absolute;
+    opacity: 0;
 }
 
-.service-radio:checked + label
-{
-	color: #32425c;
+#services-btn-1:checked ~ .services-slider label[for="services-btn-1"],
+#services-btn-2:checked ~ .services-slider label[for="services-btn-2"],
+#services-btn-3:checked ~ .services-slider label[for="services-btn-3"] 
+{ 
+    color: #32425c;
 	background-color: #ffffff;
 	border-top: 1px solid #ffffff;
 	border-bottom: 1px solid #ffffff;
 }
 
-.service
+#services-btn-1:checked ~ .services-slider .services-slide:nth-child(1), 
+#services-btn-2:checked ~ .services-slider .services-slide:nth-child(2), 
+#services-btn-3:checked ~ .services-slider .services-slide:nth-child(3)
 {
-	float: left;
-	width: 400px;
+    display: block;
+}
+
+.services-slide
+{
+    display: none;
+}
+
+#services-btn-1:checked ~ .services-slider
+{
+	background: #f2f6f8 url(../img/services/delivery.jpg) no-repeat 100% 100%;
+}
+
+#services-btn-2:checked ~ .services-slider
+{
+	background: #f2f6f8 url(../img/services/guarantee.jpg) no-repeat 100% 100%;
+}
+
+#services-btn-3:checked ~ .services-slider
+{
+	background: #f2f6f8 url(../img/services/credit.jpg) no-repeat 100% 100%;
+}
+
+.credit-btn
+{
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 192px;
+    margin-top: 29px;
 }
 
 /* ------------------------------------------  infos */

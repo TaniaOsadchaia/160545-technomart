@@ -289,41 +289,48 @@
 							Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 						</p>
 					</div>
-					<div class="clearfix">
-						<div class="services-menu">
-                            <input class="service-radio" id="service-1" name="service" type="radio" value="service-1" checked>
-							<label for="service-1">Доставка</label>
-                            <input class="service-radio" id="service-2" name="service" type="radio" value="service-2">
-                            <label for="service-2">Гарантия</label>
-                            <input class="service-radio" id="service-3" name="service" type="radio" value="service-3">
-							<label for="service-3">Кредит</label>
-						</div>
-						<div class="service">
-							<div class="content hidden">
-								<h2>Доставка</h2>
-								<p>
-									Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
-									Ведь мы неплохо заработаем,<br>
-									поднимая его на ваш на этаж!
-								</p>
-							</div>
-                            <div class="content">
-								<h2>Гарантия</h2>
-								<p>
-									Если купленный у нас товар поломается или заискрит,<br>
-                                    а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-                                    Дом уж восстановите как-нибудь сами.
-								</p>
-							</div>
-                            <div class="content hidden">
-								<h2>Кредит</h2>
-								<p>
-									Залезть в долговую яму стало проще!<br>
-                                    Кредитные консультанты придут вам на помощь.
-								</p>
-							</div>
-						</div>
-					</div>
+                    <input type="radio" id="services-btn-1" name="services-toggle">
+                    <input type="radio" id="services-btn-2" name="services-toggle">
+                    <input type="radio" id="services-btn-3" name="services-toggle" checked>
+                    <div class="services-slider clearfix">
+                        <div class="services-slider-controls">
+                            <label for="services-btn-1">Доставка</label>
+                            <label for="services-btn-2">Гарантия</label>
+                            <label for="services-btn-3">Кредит</label>
+                        </div>
+                        <div class="services-slides">
+                            <div class="services-slide">
+                                <div class="content">
+                                    <h2>Доставка</h2>
+                                    <p>
+                                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+                                        Ведь мы неплохо заработаем,<br>
+                                        поднимая его на ваш на этаж!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="services-slide">
+                                <div class="content">
+                                    <h2>Гарантия</h2>
+                                    <p>
+                                        Если купленный у нас товар поломается или заискрит,<br>
+                                        а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                                        Дом уж восстановите как-нибудь сами.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="services-slide">
+                                <div class="content">
+                                    <h2>Кредит</h2>
+                                    <p>
+                                        Залезть в долговую яму стало проще!<br>
+                                        Кредитные консультанты придут вам на помощь.
+                                    </p>
+                                    <a class="credit-btn btn" href="#">Отправить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 			</div>
 			<div class="container">
