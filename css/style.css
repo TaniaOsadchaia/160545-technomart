@@ -1727,6 +1727,90 @@ body a
 	border: 1px solid #ee3643; 
 }
 
+/* ------------------------------------------  price */
+
+.range-filter 
+{ 
+    width: 220px; 
+    padding-bottom: 20px; 
+}
+
+.range-controls 
+{ 
+    position: relative; 
+    height: 80px; 
+    margin-bottom: 10px; 
+    padding: 0px 30px; 
+    background: #f7f3ec; 
+    border-radius: 0px 0px 3px 3px; 
+    overflow: hidden; 
+} 
+
+.range-controls .scale
+{
+    margin-top: 39px;
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar
+{
+    height: 2px;
+    width: 140px;
+    background-color: #00ca74;
+}
+
+.range-controls .toggle
+{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background-color: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.range-controls .min-toggle 
+{ 
+    left: 20px; 
+} 
+
+.range-controls .max-toggle 
+{ 
+    left: 160px; 
+} 
+
+.price-controls
+{
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: normal;
+    font-family: 'PTSans', 'Arial', sans-serif;
+}
+
+.price-controls input
+{
+    width: 95px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #000000;
+    background-color: #f7f3ec;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.price-controls .price-sep 
+{ 
+    margin: 0px 5px;
+    font-size: 10px;
+    line-height: 18px;
+    font-family: 'PTSans', 'Arial', sans-serif;
+}
+
 /* ------------------------------------------  sort */
 
 .sort-title

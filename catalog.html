@@ -112,8 +112,20 @@
 						<form action="https://echo.htmlacademy.ru" method="get">
 							<div class="filter">
 								<h2 class="filter-title">Цена:</h2>
-								<input id="filter-price-min" name="filter-price-min" type="text" value="0">
-								<input id="filter-price-max" name="filter-price-max" type="text" value="3000">
+								<div class="range-filter"> 
+                                    <div class="range-controls"> 
+                                        <div class="scale"> 
+                                            <div class="bar"></div> 
+                                        </div> 
+                                        <div class="toggle min-toggle"></div> 
+                                        <div class="toggle max-toggle"></div> 
+                                    </div> 
+                                    <div class="price-controls"> 
+                                        <input class="min-price" type="text" value="0"> 
+                                        <span class="price-sep">—</span> 
+                                        <input class="max-price" type="text" value="30000"> 
+                                    </div> 
+                                </div>
 							</div>
 							<div class="filter">
 								<h2 class="filter-title">Производители:</h2>
