@@ -2266,10 +2266,96 @@ body a
 
 /* ------------------------------------------  basket popup */
 
-.added-to-basket-popup
+.basket-popup
 {
     width: 620px;
     height: 282px;
     margin-left: -310px;
     margin-top: -141px;
+}
+
+.basket-top
+{
+    min-height: 170px;
+}
+
+.basket-bottom
+{
+    padding: 37px 0;
+    min-height: 112px;
+    background: #f1f1f1;
+}
+
+.basket-btn
+{
+    float: left;
+    width: 220px;
+}
+
+.basket-btn:nth-child(2n)
+{
+    float: right;
+}
+
+.basket-center
+{
+    padding: 0 80px;
+}
+
+.resume-btn
+{
+    color: #000000;
+    background: #ffffff;
+}
+
+.resume-btn:hover
+{
+    color: #ee3643;
+    background: #ffffff;
+}
+
+.resume-btn:active
+{
+    color: #ba2732;
+    background: #ffffff;
+}
+
+.basket-notification
+{
+    padding-top: 66px;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.basket-notification::before
+{
+    content: "";
+    position: absolute;
+}
+
+.check-mark
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    width: 64px;
+    height: 64px;
+    background: #63a63e;
+    border-radius: 50%;
+}
+
+.check-mark::after
+{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -17px;
+    border-bottom: 8px solid #ffffff;
+    border-left: 8px solid #ffffff;
+    transform: rotate(-45deg);
 }

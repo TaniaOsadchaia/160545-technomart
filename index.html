@@ -289,9 +289,9 @@
 							Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 						</p>
 					</div>
-                    <input type="radio" id="services-btn-1" name="services-toggle">
+                    <input type="radio" id="services-btn-1" name="services-toggle" checked>
                     <input type="radio" id="services-btn-2" name="services-toggle">
-                    <input type="radio" id="services-btn-3" name="services-toggle" checked>
+                    <input type="radio" id="services-btn-3" name="services-toggle">
                     <div class="services-slider clearfix">
                         <div class="services-slider-controls">
                             <label for="services-btn-1">Доставка</label>
@@ -473,29 +473,52 @@
                 <div class="close-btn"></div>
             </div>
         </div>
+        <div class="basket-popup-overlay popup-overlay hidden">
+            <div class="basket-popup popup">
+                <div class="close-btn"></div>
+                <div class="basket-top">
+                    <div class="basket-center basket-notification">
+                        <span class="check-mark"></span>
+                        <span class="basket-message">Товар добавлен в корзину!</span>
+                    </div>
+                </div>
+                <div class="basket-bottom">
+                    <div class="basket-center clearfix">
+                        <a class="basket-btn btn checkout-btn" href="#">Оформить заказ</a>
+                        <a class="basket-btn btn resume-btn" href="#">Продолжить покупки</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<script>
 			
 			function createPopupShowBehaviour(btnShowSelector, popupSelector, btnCloseSelector)
 			{
-				var btnShow = document.querySelector(btnShowSelector);
-				btnShow.addEventListener("click", function(event)
-				{
-					event.preventDefault();
-					
-					var popup = document.querySelector(popupSelector);
-					popup.classList.remove("hidden");
+                var list = document.querySelectorAll(btnShowSelector);
+                for (var i = 0; i < list.length; ++i) 
+                {
+                    var btnShow = list[i];
+                    btnShow.addEventListener("click", function(event)
+                    {
+                        event.preventDefault();
 
-					var btnClose = popup.querySelector(btnCloseSelector);
-					btnClose.addEventListener("click", function(event)
-					{
-						event.preventDefault();
-						popup.classList.add("hidden");
-					});
-				});
+                        var popup = document.querySelector(popupSelector);
+                        popup.classList.remove("hidden");
+
+                        var btnClose = popup.querySelector(btnCloseSelector);
+                        btnClose.addEventListener("click", function(event)
+                        {
+                            event.preventDefault();
+                            popup.classList.add("hidden");
+                        });
+                    });
+                }
 			}
 			
 			createPopupShowBehaviour(".feedback-btn", ".feedback-popup-overlay", ".close-btn");
 			createPopupShowBehaviour(".map-btn", ".map-popup-overlay", ".close-btn");
+			createPopupShowBehaviour(".product-buy-btn", ".basket-popup-overlay", ".close-btn");
+			createPopupShowBehaviour(".product-bookmark-btn", ".basket-popup-overlay", ".close-btn");
 			
 		</script>
 	</body>
