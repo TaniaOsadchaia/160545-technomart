@@ -1153,13 +1153,13 @@ body a
 
 .services
 {
+	padding-top: 18px;
 	background: #f2f6f8
 }
 
-.services .container
+.services-title-content
 {
-	/*padding-bottom: 126px;
-	background: #f2f6f8 url(../img/services/delivery.jpg) no-repeat 100% 100%;*/
+	margin-bottom: 22px;
 }
 
 .services-slider-controls
@@ -1262,6 +1262,32 @@ body a
     vertical-align: middle;
     min-width: 192px;
     margin-top: 29px;
+}
+
+.services-slide
+{
+	padding-top: 46px;
+}
+
+.services-slide-title
+{
+	margin: 0;
+	margin-bottom: 24px;
+	padding: 0;
+	color: #32425c;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.services-slide-desc
+{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 25px;
+	font-family: "PT Sans", "Arial", sans-serif;
 }
 
 /* ------------------------------------------  infos */
