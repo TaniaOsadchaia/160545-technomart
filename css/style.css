@@ -334,7 +334,8 @@ body a
 
 .header-middle
 {
-    margin-bottom: 42px;
+	margin-bottom: 23px;
+	min-height: 112px;
 }
 
 .site-info
