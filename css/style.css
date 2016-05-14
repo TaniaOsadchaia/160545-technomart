@@ -102,7 +102,7 @@ body a
 .btn
 {
 	margin: 0;
-	padding: 11px;
+	padding: 10px 5px;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -925,6 +925,10 @@ body a
 	display: block;
 	min-width: 135px;
 	margin-bottom: 10px;
+	padding-top: 13px;
+	padding-bottom: 8px;
+	font-size: 14px;
+	line-height: 14px;
 	background: #63a63e;
 	box-shadow: 0 3px 0 #367315;
 }
@@ -959,7 +963,11 @@ body a
 {
 	display: block;
 	min-width: 135px;
+	padding-top: 10px;
+	padding-bottom: 8px;
 	color: #32425c;
+	font-size: 14px;
+	line-height: 14px;
 	background: transparent;
 	border: 3px solid #63a63e;
 }
@@ -1308,7 +1316,7 @@ body a
 .info-company
 {
 	padding-top: 34px;
-	padding-bottom: 84px;
+	padding-bottom: 86px;
 }
 
 .info-more-btn
