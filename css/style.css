@@ -27,33 +27,6 @@
   speak: none;
 }
 
-.icon-left::before { content: "\3c"; } /* "&lt;" */
-.icon-right::before { content: "\3e"; } /* "&gt;" */
-.icon-basket::before { content: "\62"; } /* "b" */
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-vk::before { content: "\76"; } /* "v" */
-.icon-up::before { content: "\2c4"; } /* "˄" */
-.icon-down::before { content: "\2c5"; } /* "˅" */
-.icon-left-big::before { content: "\2190"; } /* "←" */
-.icon-right-big::before { content: "\2192"; } /* "→" */
-.icon-login::before { content: "\2386"; } /* "⎆" */
-.icon-logout::before { content: "\241b"; } /* "␛" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-circle::before { content: "\25cb"; } /* "○" */
-.icon-circle-dot::before { content: "\25cf"; } /* "●" */
-.icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-youtube::before { content: "\f39e"; } /* "" */
-.icon-home::before { content: "🏠"; } /* "\1f3e0" */
-.icon-user::before { content: "👨"; } /* "\1f468" */
-.icon-phone::before { content: "📞"; } /* "\1f4de" */
-.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
-.icon-search::before { content: "🔍"; } /* "\1f50d" */
-.icon-bookmark::before { content: "🔖"; } /* "\1f516" */
-
 /* ------------------------------------------  common */
 
 * 
@@ -445,11 +418,6 @@ body a
 .login:hover::before
 {
 	color: #32425c;
-}
-
-.login:active .icon-login
-{
-	color: #c5c5c5;
 }
 
 .sign-out
@@ -1469,21 +1437,51 @@ body a
 
 .social
 {
+	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 	height: 40px;
 	width: 40px;
-	font-size: 17px;
-	line-height: 40px;
-	text-align: center;
-	background-color: #212a3a;
-	border-radius: 20px;
+	padding: 0;
+	background: #212a3a;
+	border-radius: 50%;
 }
 
 .social:hover,
 .social:active
 {
-	background-color: #ee3643;
+	background: #ee3643;
+}
+
+.social::before
+{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	margin-left: -20px;
+	margin-top: -20px;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	font-family: "symbols-technomart";
+}
+
+.icon-vk::before
+{
+	content: "\76";
+}
+
+.icon-facebook::before
+{
+	content: "\66";
+}
+
+.icon-instagramm::before
+{
+	content: "\1f4f7";
 }
 
 /* ------------------------------------------  footer links */
