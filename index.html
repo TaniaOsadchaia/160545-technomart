@@ -9,6 +9,9 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" >
 	</head>
 	<body>
+		<div class="maket hidden">
+			<div class="maket-img"></div>
+		</div>
 		<header class="main-header">
 			<div class="header-top">
 				<div class="container clearfix">
@@ -519,6 +522,17 @@
 			createPopupShowBehaviour(".map-btn", ".map-popup-overlay", ".close-btn");
 			createPopupShowBehaviour(".product-buy-btn", ".basket-popup-overlay", ".close-btn");
 			createPopupShowBehaviour(".product-bookmark-btn", ".basket-popup-overlay", ".close-btn");
+			
+			var body = document.querySelector("body");
+			body.addEventListener("keydown", function(event)
+			{
+				console.log("click" + event.keyCode);
+				if (event.keyCode == 68)
+				{
+					var o = document.querySelector(".maket");
+					o.classList.toggle("hidden");
+				}
+			})
 			
 		</script>
 	</body>
