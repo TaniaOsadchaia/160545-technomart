@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&ampsubset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&ampsubset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 		<link rel="stylesheet" type="text/css" href="css/style.css" >
+		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="maket hidden">
@@ -432,45 +433,5 @@
                 </div>
             </div>
         </div>
-        <script>
-			
-			function createPopupShowBehaviour(btnShowSelector, popupSelector, btnCloseSelector)
-			{
-                var list = document.querySelectorAll(btnShowSelector);
-                for (var i = 0; i < list.length; ++i) 
-                {
-                    var btnShow = list[i];
-                    btnShow.addEventListener("click", function(event)
-                    {
-                        event.preventDefault();
-
-                        var popup = document.querySelector(popupSelector);
-                        popup.classList.remove("hidden");
-
-                        var btnClose = popup.querySelector(btnCloseSelector);
-                        btnClose.addEventListener("click", function(event)
-                        {
-                            event.preventDefault();
-                            popup.classList.add("hidden");
-                        });
-                    });
-                }
-			}
-            
-			createPopupShowBehaviour(".product-buy-btn", ".basket-popup-overlay", ".close-btn");
-			createPopupShowBehaviour(".product-bookmark-btn", ".basket-popup-overlay", ".close-btn");
-			
-			var body = document.querySelector("body");
-			body.addEventListener("keydown", function(event)
-			{
-				console.log("click" + event.keyCode);
-				if (event.keyCode == 68)
-				{
-					var o = document.querySelector(".maket");
-					o.classList.toggle("hidden");
-				}
-			})
-			
-		</script>
 	</body>
 </html>
