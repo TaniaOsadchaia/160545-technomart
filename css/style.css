@@ -1167,7 +1167,7 @@ body a
 
 .services-title-content
 {
-	margin-bottom: 22px;
+	margin-bottom: 70px;
 }
 
 .services-slider-controls
@@ -1176,7 +1176,7 @@ body a
 	float: left;
 	width: 240px;
     height: 100%;
-	margin-top: 50px;
+	padding-top: 4px;
     margin-right: 80px;
     margin-bottom: 102px;
 }
@@ -1273,11 +1273,6 @@ body a
     margin-top: 29px;
 }
 
-.services-slide
-{
-	padding-top: 46px;
-}
-
 .services-slide-title
 {
 	margin: 0;
@@ -1316,7 +1311,7 @@ body a
 .info-company
 {
 	padding-top: 34px;
-	padding-bottom: 86px;
+	padding-bottom: 87px;
 }
 
 .info-more-btn
@@ -1329,7 +1324,7 @@ body a
 
 .info-map
 {
-	margin-top: 32px;
+	padding-top: 33px;
     margin-bottom: 40px;
 }
 
@@ -2074,7 +2069,7 @@ body a
 {
 	margin: 0;
 	padding: 0;
-	padding-top: 48px;
+	padding-top: 46px;
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
@@ -2098,7 +2093,7 @@ body a
 {
 	margin: 0;
 	padding: 0;
-	padding-top: 2px;
+	padding-top: 4px;
 	list-style: none;
 }
 
@@ -2207,9 +2202,9 @@ body a
 
 .popup .close-btn
 {
-    float: right;
-    margin-top: 16px;
-    margin-right: 10px;
+    position: absolute;
+    top: 16px;
+    right: 10px;
 }
 
 .popup::before
