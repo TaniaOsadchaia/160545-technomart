@@ -602,6 +602,11 @@ body a
 
 /* ------------------------------------------  categories */
 
+.categories
+{
+	margin-bottom: 32px;
+}
+
 .category
 {
     float: left;
@@ -639,7 +644,7 @@ body a
 	width: 160px;
 	padding-left: 23px;
 	padding-top: 20px;
-	padding-bottom: 22px;
+	padding-bottom: 20px;
 }
 
 .category-title
@@ -861,26 +866,28 @@ body a
 
 /* ------------------------------------------  products */
 
+.products
+{
+	margin-bottom: 2px;
+	padding: 0 1px;
+}
+
+.products-index .product:nth-child(4n),
+.products-catalog .product:nth-child(3n)
+{
+    margin-right: -1px;
+}
+
 .product
 {
     float: left;
-    width: 220px;
-    min-height: 318px;
+    width: 219px;
+    min-height: 317px;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 21px;
 	padding: 10px;
 	text-align: center;
 	box-shadow: 0 0 0 1px #e5e5e5;
-}
-
-.index-products .product:nth-child(4n)
-{
-    margin-right: 0px;
-}
-
-.catalog-products .product:nth-child(3n)
-{
-	margin-right: 0px;
 }
 
 .product:hover
@@ -900,7 +907,7 @@ body a
 
 .product-top-block
 {
-	height: 178px;
+	height: 168px;
 }
 
 .product-control
@@ -977,6 +984,7 @@ body a
 {
 	position: relative;
 	height: 100%;
+	top: -10px;
 }
 
 .product-view img
@@ -991,7 +999,7 @@ body a
 
 .product-name
 {
-	margin-bottom: 11px;
+	margin-bottom: 13px;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -1013,9 +1021,9 @@ body a
 .product-price
 {
 	position: relative;
+	left: 3px;
 	display: inline-block;
 	min-width: 140px;
-	margin-bottom: 14px;
 	padding: 10px;
 	font-size: 17px;
 	line-height: 18px;
@@ -1087,14 +1095,30 @@ body a
 
 /* ------------------------------------------  brands */
 
+.brands
+{
+	padding: 0 1px;
+}
+
+.brands-index .brand:nth-child(4n)
+{
+     margin-right: -1px;
+}
+
+.brands-index
+{
+	margin-right: -1px;
+	margin-bottom: 66px;
+}
+
 .brand
 {
 	position: relative;
     float: left;
-    width: 220px;
-    height: 145px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    width: 219px;
+    height: 142px;
+    margin-bottom: 22px;
+    margin-right: 21px;
 	box-shadow: 0 0 0 1px #e5e5e5;
 }
 
@@ -1123,16 +1147,6 @@ body a
 	right: 0;
 	bottom: 0;
 	top: 0;
-}
-
-.index-brands .brand:nth-child(4n)
-{
-     margin-right: 0px;
-}
-
-.index-brands
-{
-	margin-bottom: 66px;
 }
 
 /* ------------------------------------------  services */
