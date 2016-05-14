@@ -1333,21 +1333,21 @@ body a
     margin-bottom: 40px;
 }
 
-.info-map:hover
-{
-	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-
-.info-map:active
-{
-	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-
 .map-btn
 {
 	display: block;
 	width: 300px;
 	height: 158px;
+}
+
+.map-btn:hover
+{
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.map-btn:active
+{
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .feedback-btn
@@ -2170,9 +2170,9 @@ body a
 {
     content: "";
     position: absolute;
-    left: -2px;
+    left: 0;
     top: 8px;
-    width: 25px;
+    width: 26px;
     height: 5px;
     background: #ee3643;
 }
@@ -2265,9 +2265,9 @@ body a
 
 .map-popup .close-btn
 {
-    float: right;
-    margin-top: 9px;
-    margin-right: 9px;
+    position: absolute;
+    top: 5px;
+	right: -32px;
 }
 
 /* ------------------------------------------  feedback popup */
