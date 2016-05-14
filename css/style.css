@@ -49,6 +49,11 @@
 	opacity: 0.5;
 }
 
+.maket-img-catalog
+{
+	background: url(../img/technomart-catalog.jpg) no-repeat 0 0;
+}
+
 /* ------------------------------------------  common */
 
 * 
@@ -397,7 +402,7 @@ body a
 
 .address
 {
-	padding-top: 2px;
+	padding-top: 6px;
 	font-size: 14px;
 	text-align: center;
 }
@@ -462,7 +467,7 @@ body a
 .sign-out
 {
 	position: relative;
-	padding-left: 48px;
+	padding-left: 43px;
 	padding-right: 70px;
 	
 	text-transform: none;
@@ -480,7 +485,7 @@ body a
 .sign-out::before
 {
 	content: "\1f468";
-	left: 6px;
+	left: 13px;
 	font-size: 18px;
 }
 
@@ -868,7 +873,7 @@ body a
 .products
 {
 	margin-bottom: 2px;
-	padding: 0 1px;
+	padding: 0;
 }
 
 .products-index .product:nth-child(4n),
@@ -880,13 +885,13 @@ body a
 .product
 {
     float: left;
-    width: 219px;
+    width: 220px;
     min-height: 317px;
     margin-bottom: 20px;
-    margin-right: 21px;
+    margin-right: 20px;
 	padding: 10px;
 	text-align: center;
-	box-shadow: 0 0 0 1px #e5e5e5;
+	box-shadow: 0 0 0 1px #e5e5e5 inset;
 }
 
 .product:hover
@@ -1045,26 +1050,26 @@ body a
 	border-bottom-left-radius: 2px;
 }
 
-.product-price:after 
+.product-price::after 
 {
 	content: "";
 	position: absolute;
 	width: 0;
 	height: 0;
 	top: 0;
-	right: -25px; 
+	right: -23px; 
 	border: 22px solid transparent;
 	border-top: 22px solid #ffffff;
 }
 
-.product-price:before 
+.product-price::before 
 {
 	content: "";
 	position: absolute;
 	width: 0;
 	height: 0;
 	bottom: 0;
-	right: -25px; 
+	right: -23px; 
 	border: 22px solid transparent;
 	border-bottom: 22px solid #ffffff;
 }
@@ -1648,6 +1653,7 @@ body a
 	font-size: 13px;
 	line-height: 20px;
     color: #000000;
+	font-family: "PT Sans", "Arial", sans-serif;
     text-decoration: none; 
     text-transform: uppercase;
 }
@@ -1690,7 +1696,7 @@ body a
 
 /* ------------------------------------------  filters + catalog */
 
-.filters
+.filters-block
 {
 	float: left;
 	width: 220px;
@@ -1705,7 +1711,7 @@ body a
 .control-header
 {
 	margin-bottom: 20px;
-	padding: 19px 15px;
+	padding: 10px 18px;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000000;
@@ -1713,6 +1719,22 @@ body a
 	font-family: "PT Sans", "Arial", sans-serif;
 	background-color: #f7f3ec;
 	border-radius: 3px;
+}
+
+.filter
+{
+	margin-bottom: 24px;
+}
+
+.filter-title
+{
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	font-size: 17px;
+	line-height: 17px;
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase;
 }
 
 .filter-checkbox,
@@ -1726,7 +1748,7 @@ body a
 {
 	position: relative;
 	display: block;
-	margin: 20px 0;
+	margin-bottom: 20px;
 	padding-left: 35px;
 	font-size: 15px;
 	line-height: 20px;
@@ -1784,7 +1806,13 @@ body a
 
 .filter + .filter
 {
+	padding-top: 22px;
 	border-top: 1px solid #e5e5e5;
+}
+
+.filters
+{
+	margin-bottom: 78px;
 }
 
 .filters-submit-btn
@@ -1793,6 +1821,7 @@ body a
     outline: none;
     color: #000000;
 	text-align: center;
+	font-family: "PT Sans", "Arial", sans-serif;
 	background: #ffffff;
 	border-radius: 2px;
 	border: 1px solid #e5e5e5; 
@@ -1815,10 +1844,11 @@ body a
 
 /* ------------------------------------------  price */
 
+
+
 .range-filter 
 { 
-    width: 220px; 
-    padding-bottom: 20px; 
+    width: 220px;
 }
 
 .range-controls 
@@ -1902,36 +1932,41 @@ body a
 .sort-title
 {
 	float: left;
-	width: 120px;
+	width: 220px;
 }
 
 .sort-types
 {
 	float: left;
-	width: 480px;
+	width: 366px;
 	font-size: 0;
-	text-align: right;
 }
 
 .sort-type
 {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: bottom;
 	margin: 0;
-	margin-right: 22px;
-	margin-left: 40px;
+	margin-bottom: -4px;
+	padding: 0;
+	width: 33.3%;
+}
+
+.sort-current
+{
+	font-size: 13px;
+	line-height: 18px;
+	color: #ee3643;
+	border-bottom: none;
+}
+
+.sort-link
+{
 	margin-bottom: -1px;
 	font-size: 13px;
 	line-height: 18px;
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #ee3643;
-}
-
-.sort-type-current
-{
-	margin-right: 32px;
-	color: #ee3643;
-	border-bottom: none;
 }
 
 .sort-link:hover
@@ -1949,29 +1984,24 @@ body a
 .sort-directions
 {
 	float: right;
-	width: 70px;
+	width: 78px;
 	font-size: 0;
-	text-align: right;
 }
 
 .sort-direction
 {
 	position: relative;
 	display: inline-block;
-	vertical-align: top;
-	margin: 0;
-	padding: 0;
-	padding-right: 7px;
-	width: 33px;
-	height: 18px;
+	vertical-align: middle;
+	width: 50%;
 }
 
 .sort-direction::after
 {
 	content: "";
 	position: absolute;
-	top: 0;
-	left: 16px;
+	top: -10px;
+	right: 0;
 	color: rgba(0, 0, 0, 0.3);
 	font-size: 23px;
 	font-family: "symbols-technomart";
@@ -2007,8 +2037,8 @@ body a
 
 .pagination
 {
-	margin-top: 32px;
-	margin-bottom: 50px;
+	margin-bottom: 54px;
+	padding-top: 34px;
 }
 
 .pagination a, 
@@ -2018,12 +2048,13 @@ body a
 	vertical-align: bottom;
 	min-width: 38px;
 	margin: 0;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding: 12px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	padding: 10px 5px;
 	font-size: 13px;
 	line-height: 14px;
 	color: #000000;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 	background: #ffffff;
@@ -2050,8 +2081,7 @@ body a
 
 .pagination a:last-child
 {
-	padding-left: 31px;
-	padding-right: 31px;
+	min-width: 140px;
 }
 
 /* ------------------------------------------  text-content */
@@ -2059,7 +2089,7 @@ body a
 .text-content-block
 {
 	padding-top: 20px;
-	padding-bottom: 68px;
+	padding-bottom: 72px;
 	background-color: #f2f6f8;
 }
 
