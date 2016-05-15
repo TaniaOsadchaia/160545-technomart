@@ -723,7 +723,7 @@ body a
     height: 10px;
     margin-left: -100px;
     text-align: center;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .slider-controls label
