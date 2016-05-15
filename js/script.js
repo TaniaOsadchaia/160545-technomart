@@ -8,6 +8,14 @@ function showPopup(popup)
 		event.preventDefault();
 		popup.classList.add("hidden");
 	});
+	
+	window.addEventListener("keydown", function(event) 
+	{
+		if (event.keyCode === 27)
+		{
+			popup.classList.add("hidden");
+		}
+	});
 }
 
 function createPopupBehaviour(selectorShowBtn, selectorPopup)
@@ -27,11 +35,15 @@ function createPopupBehaviour(selectorShowBtn, selectorPopup)
 
 function fillByStorage(form, storageId, selector)
 {
+	var item = form.querySelector(selector);
 	var storageValue = localStorage.getItem(storageId);
 	if (storageValue)
 	{
-		var item = form.querySelector(selector);
 		item.value = storageValue;
+	}
+	else
+	{
+		item.focus();
 	}
 }
 
@@ -46,9 +58,9 @@ function createFeedbackBehaviour()
 		event.preventDefault();
 		var popup = document.querySelector(".feedback-popup-overlay");
 		
-		fillByStorage(form, "userName", "[name=feedback-name]");
-		fillByStorage(form, "userMail", "[name=feedback-mail]");
 		fillByStorage(form, "userMsg", "[name=feedback-content]");
+		fillByStorage(form, "userMail", "[name=feedback-mail]");
+		fillByStorage(form, "userName", "[name=feedback-name]");
 		
 		showPopup(popup);
 	});
