@@ -108,15 +108,29 @@ function createFeedbackBehaviour()
     });
 }
 
-function showInteractiveMap () {
-    YMaps.load(function() {
+function showInteractiveMap () 
+{
+    YMaps.load(function() 
+	{
         // Создание обработчика для события window.onLoad
-        YMaps.jQuery(function () {
+        YMaps.jQuery(function () 
+		{
             // Создание экземпляра карты и его привязка к созданному контейнеру
             var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
 
             // Установка для карты ее центра и масштаба
-            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+            map.setCenter(new YMaps.GeoPoint(30.319031186477634, 59.93801434640367), 16);
+			
+			// Открытие балуна
+            map.openBalloon(new YMaps.GeoPoint(30.32282279137667, 59.93865205242114), "Большая Конюшенная ул., 19", {hasCloseButton:false});
+			
+			// Добавление элементов управления
+            //map.addControl(new YMaps.TypeControl());
+            map.addControl(new YMaps.ToolBar());
+            map.addControl(new YMaps.Zoom());
+            map.addControl(new YMaps.MiniMap());
+            map.addControl(new YMaps.ScaleLine());
+            //map.addControl(new YMaps.SearchControl());
         });
     });
 }
