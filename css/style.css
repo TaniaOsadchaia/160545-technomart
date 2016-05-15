@@ -27,33 +27,6 @@
   speak: none;
 }
 
-.maket
-{
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-}
-
-.maket-img
-{
-	position: absolute;
-    width: 1200px;
-    height: 3151px;
-    left: 50%;
-    top: 0;
-    margin-left: -600px;
-	background: url(../img/technomart-index.jpg) no-repeat 0 0;
-	opacity: 0.5;
-}
-
-.maket-img-catalog
-{
-	background: url(../img/technomart-catalog.jpg) no-repeat 0 0;
-}
-
 /* ------------------------------------------  common */
 
 * 
@@ -705,7 +678,6 @@ body a
     width: 620px;
     height: 266px;
     margin-right: 20px;
-    background: yellow;
 }
 
 .slider input[type=radio] 
@@ -1881,12 +1853,13 @@ body a
     position: absolute;
     top: 30px;
     left: 30px;
-    width: 4px;
-    height: 4px;
-    border: 8px solid white;
+    width: 20px;
+    height: 20px;
+   	border: 8px solid white;
     background-color: #ababab;
+	border-radius: 50%;
+	box-shadow: 0 2px 0 #d4d1cb;
     cursor: pointer;
-    border-radius: 50%;
 }
 
 .range-controls .min-toggle 
@@ -2228,7 +2201,7 @@ body a
     margin-top: -200px;
     background: #ffffff;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-	animation: bounce 0.6s;
+	animation: bounce 0.5s;
 }
 
 .popup .close-btn
@@ -2278,7 +2251,7 @@ body a
 
 .popup-error .popup
 {
-	animation: shake 0.6s;
+	animation: shake 0.5s;
 }
 
 /* ------------------------------------------  map popup */
