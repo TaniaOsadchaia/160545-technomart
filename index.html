@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" >
 		<link rel="stylesheet" type="text/css" href="css/style-optimized.css" >
 		<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
-    	<script src="js/script-optimized.js" type="text/javascript"></script>
+		<script src="js/script-optimized.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<header class="main-header">
@@ -83,7 +83,7 @@
 		<main class="main-content">
 			<div class="container">
 				<div class="categories clearfix">
-                    <div class="category fill-yellow clearfix special">
+                    <div class="category fill-yellow special">
 						<div class="category-info">
 							<h3 class="category-title">Материалы</h3>
 							<a class="category-btn btn" href="#">На любой вкус</a>
@@ -162,7 +162,7 @@
 					</div>
 					<div class="block-content">
 						<div class="products products-index clearfix">
-							<article class="product">
+							<div class="product">
 								<div class="product-top-block">
 									<div class="product-view">
 										<img src="img/products/bfg-9000.jpg" width="184" height="164" alt="BFG 9000">
@@ -178,8 +178,8 @@
 								</div>
 								<div class="product-price-old">32500 р.</div>
 								<div class="product-price">25500 р.</div>
-							</article>
-							<article class="product">
+							</div>
+							<div class="product">
 								<div class="product-top-block">
 									<div class="product-view">
 										<img src="img/products/bfg-3000.jpg" width="127" height="112" alt="BFG 3000">
@@ -195,15 +195,15 @@
 								</div>
 								<div class="product-price-old">22500 р.</div>
 								<div class="product-price">15500 р.</div>
-							</article>
-							<article class="product">
+							</div>
+							<div class="product">
 								<div class="product-top-block">
 									<div class="product-view">
 										<img src="img/products/bfg-6000.jpg" width="144" height="128" alt="BFG 6000">
 									</div>
 									<div class="product-control">
-										<a class="product-buy-btn btn" href="#">Купить</a>
-										<a class="product-bookmark-btn btn" href="#">В закладки</a>
+										<a class="product-buy-btn btn" href="purchase.html">Купить</a>
+										<a class="product-bookmark-btn btn" href="purchase.html">В закладки</a>
 									</div>
 								</div>
 								<div class="product-name">
@@ -212,8 +212,8 @@
 								</div>
 								<div class="product-price-old">30500 р.</div>
 								<div class="product-price">25500 р.</div>
-							</article>
-							<article class="product special">
+							</div>
+							<div class="product special">
 								<div class="product-top-block">
 									<div class="product-view">
 										<img src="img/products/bfg-2000.jpg" width="127" height="112" alt="BFG 2000">
@@ -228,7 +228,7 @@
 									BFG 2000
 								</div>
 								<div class="product-price">12500 р.</div>
-							</article>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -239,46 +239,46 @@
 					</div>
 					<div class="block-content">
 						<div class="brands brands-index clearfix">
-							<article class="brand">
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/bosch.jpg" width="126" height="37" alt="Bosch">
 								</a>
-							</article>
-							<article class="brand">
+							</div>
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/makita.jpg" width="123" height="40" alt="Makita">
 								</a>
-							</article>
-							<article class="brand">
+							</div>
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/dewalt.jpg" width="146" height="44" alt="DeWalt">
 								</a>
-							</article>
-							<article class="brand">
+							</div>
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/interskol.jpg" width="200" height="88" alt="Интерскол">
 								</a>
-							</article>
-							<article class="brand">
+							</div>
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/hitachi.jpg" width="169" height="31" alt="Hitachi">
 								</a>
-							</article>
-							<article class="brand">
+							</div>
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/lg.jpg" width="121" height="73" alt="LG">
 								</a>
-							</article>
-							<article class="brand">
+							</div>
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/aeg.jpg" width="151" height="96" alt="AEG">
 								</a>
-							</article>
-							<article class="brand">
+							</div>
+							<div class="brand">
 								<a href="#" target="_blank">
 									<img src="img/brands/metabo.jpg" width="204" height="69" alt="Metabo">
 								</a>
-							</article>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -474,19 +474,19 @@
 				<div class="map" id="YMapsID"></div>
             </div>
         </div>
-        <div class="basket-popup-overlay popup-overlay hidden">
-            <div class="basket-popup popup">
+        <div class="purchase-popup-overlay popup-overlay hidden">
+            <div class="purchase-popup popup">
                 <div class="close-btn"></div>
-                <div class="basket-top">
-                    <div class="basket-center basket-notification">
+                <div class="purchase-top">
+                    <div class="purchase-center purchase-notification">
                         <span class="check-mark"></span>
-                        <span class="basket-message">Товар добавлен в корзину!</span>
+                        <span class="purchase-message">Товар добавлен в корзину!</span>
                     </div>
                 </div>
-                <div class="basket-bottom">
-                    <div class="basket-center clearfix">
-                        <a class="basket-btn btn checkout-btn" href="#">Оформить заказ</a>
-                        <a class="basket-btn btn resume-btn" href="#">Продолжить покупки</a>
+                <div class="purchase-bottom">
+                    <div class="purchase-center clearfix">
+                        <a class="purchase-btn btn checkout-btn" href="#">Оформить заказ</a>
+                        <a class="purchase-btn btn resume-btn" href="#">Продолжить покупки</a>
                     </div>
                 </div>
             </div>

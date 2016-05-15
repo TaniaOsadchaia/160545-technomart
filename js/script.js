@@ -1,6 +1,6 @@
 function showPopup(popup) {
     popup.classList.remove("hidden");
-
+	
     var btnClose = popup.querySelector(".close-btn");
     btnClose.addEventListener("click", function(event) {
         event.preventDefault();
@@ -128,8 +128,8 @@ function createMapBehaviour() {
 }
 
 function ready(event) {
-    createPopupBehaviour(".product-buy-btn", ".basket-popup-overlay");
-    createPopupBehaviour(".product-bookmark-btn", ".basket-popup-overlay");
+    createPopupBehaviour(".product-buy-btn", ".purchase-popup-overlay");
+    createPopupBehaviour(".product-bookmark-btn", ".purchase-popup-overlay");
   
     createFeedbackBehaviour();
     createMapBehaviour();
