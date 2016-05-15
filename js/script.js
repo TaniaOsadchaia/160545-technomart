@@ -95,6 +95,8 @@ function createFeedbackBehaviour()
 				else msg = msg + " и " + empties[i];
 			}					   
 			console.log(msg);
+			popup.classList.remove("modal-error");
+          	popup.offsetWidth = popup.offsetWidth;
 			popup.classList.add("popup-error");
 		}
 		else
