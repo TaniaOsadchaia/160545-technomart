@@ -6,16 +6,22 @@ function showPopup(popup)
 	btnClose.addEventListener("click", function(event)
 	{
 		event.preventDefault();
-		popup.classList.add("hidden");
+		hidePopup(popup);
 	});
 	
 	window.addEventListener("keydown", function(event) 
 	{
 		if (event.keyCode === 27)
 		{
-			popup.classList.add("hidden");
+			hidePopup(popup);
 		}
 	});
+}
+
+function hidePopup(popup)
+{
+	popup.classList.add("hidden");
+	popup.classList.remove("popup-error");
 }
 
 function createPopupBehaviour(selectorShowBtn, selectorPopup)
@@ -52,11 +58,12 @@ function createFeedbackBehaviour()
 	var form = document.querySelector(".feedback-form");
 	if (!form) return;
 	
+	var popup = document.querySelector(".feedback-popup-overlay");
 	var btnShow = document.querySelector(".feedback-btn");
+	
 	btnShow.addEventListener("click", function(event)
 	{
 		event.preventDefault();
-		var popup = document.querySelector(".feedback-popup-overlay");
 		
 		fillByStorage(form, "userMsg", "[name=feedback-content]");
 		fillByStorage(form, "userMail", "[name=feedback-mail]");
@@ -88,6 +95,7 @@ function createFeedbackBehaviour()
 				else msg = msg + " и " + empties[i];
 			}					   
 			console.log(msg);
+			popup.classList.add("popup-error");
 		}
 		else
 		{
