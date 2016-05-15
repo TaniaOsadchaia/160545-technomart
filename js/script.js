@@ -50,11 +50,11 @@ function createFeedbackBehaviour() {
 
     btnShow.addEventListener("click", function(event) {
         event.preventDefault();
-
-        fillByStorage(form, "userMsg", "[name=feedback-content]");
-        fillByStorage(form, "userMail", "[name=feedback-mail]");
-        fillByStorage(form, "userName", "[name=feedback-name]");
-
+        if (localStorage) {
+            fillByStorage(form, "userMsg", "[name=feedback-content]");
+            fillByStorage(form, "userMail", "[name=feedback-mail]");
+            fillByStorage(form, "userName", "[name=feedback-name]");
+        }
         showPopup(popup);
     });
 
@@ -82,9 +82,11 @@ function createFeedbackBehaviour() {
             popup.offsetWidth = popup.offsetWidth;
             popup.classList.add("popup-error");
         } else {
-            localStorage.setItem("userName", userName.value);
-            localStorage.setItem("userMail", userMail.value);
-            localStorage.setItem("userMsg", userMsg.value);
+            if (localStorage) {
+                localStorage.setItem("userName", userName.value);
+                localStorage.setItem("userMail", userMail.value);
+                localStorage.setItem("userMsg", userMsg.value);   
+            }
         }
     });
 }
