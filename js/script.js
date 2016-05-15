@@ -108,13 +108,40 @@ function createFeedbackBehaviour()
     });
 }
 
+function showInteractiveMap () {
+    YMaps.load(function() {
+        // Создание обработчика для события window.onLoad
+        YMaps.jQuery(function () {
+            // Создание экземпляра карты и его привязка к созданному контейнеру
+            var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+            // Установка для карты ее центра и масштаба
+            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+        });
+    });
+}
+
+function createMapBehaviour()
+{
+	var btn = document.querySelector(".map-btn");
+	if (!btn) return;
+	
+	btn.addEventListener("click", function(event)
+	{
+		event.preventDefault();
+		var popup = document.querySelector(".map-popup-overlay");
+		showPopup(popup);
+		showInteractiveMap();
+	});
+}
+
 function ready(event) 
 {
-	createPopupBehaviour(".map-btn", ".map-popup-overlay");
 	createPopupBehaviour(".product-buy-btn", ".basket-popup-overlay");
 	createPopupBehaviour(".product-bookmark-btn", ".basket-popup-overlay");
 	
 	createFeedbackBehaviour();
+	createMapBehaviour();
 }
 
 document.addEventListener("DOMContentLoaded", ready);
