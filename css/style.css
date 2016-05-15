@@ -2065,18 +2065,18 @@ body a {
     top: 50%;
     margin-left: -470px;
     margin-top: -223px;
-    padding-top: 7px;
     background: #e9e5dc url(../img/map/map-popup-1.jpg) no-repeat 0 0;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 .map-popup .close-btn {
+	top: 10px;
     z-index: 2;
 }
 
 .map {
     width: 940px;
-    height: 439px;
+    height: 446px;
 }
 
 /* fix yandex map drawing */
