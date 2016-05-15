@@ -960,6 +960,10 @@ body a {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-align: center;
     background: #ee3643;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -1911,10 +1915,18 @@ body a {
 }
 
 .close-btn::before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .close-btn::after {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -2216,5 +2228,9 @@ body a {
     margin-left: -17px;
     border-bottom: 8px solid #ffffff;
     border-left: 8px solid #ffffff;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
