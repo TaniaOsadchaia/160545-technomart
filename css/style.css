@@ -1342,9 +1342,12 @@ body a {
 	border-radius: 50%;
 }
 
-.social:hover,
-.social:active {
+.social:hover {
 	background: #ee3643;
+}
+
+.social:active {
+	background: #ba2732;
 }
 
 .social::before {
