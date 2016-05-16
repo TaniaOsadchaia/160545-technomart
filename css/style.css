@@ -757,13 +757,9 @@ body a {
 	padding: 0;
 }
 
-.products-index .product:nth-child(4n),
-.products-catalog .product:nth-child(3n) {
-	margin-right: -1px;
-}
-
 .product {
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	width: 220px;
 	min-height: 317px;
 	margin-bottom: 20px;
@@ -771,6 +767,11 @@ body a {
 	padding: 10px;
 	text-align: center;
 	box-shadow: 0 0 0 1px #e5e5e5 inset;
+}
+
+.products-index .product:nth-child(4n),
+.products-catalog .product:nth-child(3n) {
+	margin-right: 0;
 }
 
 .product:hover {
@@ -973,23 +974,23 @@ body a {
 	padding: 0 1px;
 }
 
-.brands-index .brand:nth-child(4n) {
-	margin-right: -1px;
-}
-
 .brands-index {
-	margin-right: -1px;
 	margin-bottom: 66px;
 }
 
 .brand {
 	position: relative;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 	width: 219px;
 	height: 142px;
 	margin-bottom: 22px;
-	margin-right: 21px;
-	box-shadow: 0 0 0 1px #e5e5e5;
+	margin-right: 20px;
+	box-shadow: 0 0 0 1px #e5e5e5 inset;
+}
+
+.brands-index .brand:nth-child(4n) {
+	margin-right: 0;
 }
 
 .brand:hover {
