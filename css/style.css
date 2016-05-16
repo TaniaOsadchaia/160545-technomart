@@ -658,11 +658,11 @@ body a {
 }
 
 .slide:nth-child(1) {
-	background: transparent url('../img/slider/slider-bg-1.jpg') no-repeat 0 0;
+	background: #baa997 url('../img/slider/slider-bg-1.jpg') no-repeat 0 0;
 }
 
 .slide:nth-child(2) {
-	background: transparent url('../img/slider/slider-bg-2.jpg') no-repeat 0 0;
+	background: #baa997 url('../img/slider/slider-bg-2.jpg') no-repeat 0 0;
 }
 
 .slide-content {
